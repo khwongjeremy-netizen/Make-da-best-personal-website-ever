@@ -14,6 +14,7 @@
     <!-- External CSS Stylesheet -->
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="dist.css">
+     <script src="./script.js"></script>
     
 </head>
 <body class = "bg-slate-950 text-slate-100">
@@ -44,7 +45,7 @@
 
     <main>
         <div class="flex flex-row items-center space-x-6 mt-12 mx-auto w-fit group">
-            <div class=" w-40 h-40 rounded-full overflow-hidden flex-shrink-0 transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:translate-x-[-24px]">
+            <div onclick="toggleQuote()" class=" w-40 h-40 rounded-full overflow-hidden flex-shrink-0 transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:translate-x-[-24px]">
                 <img src="Images/Fits/fit1.jpeg" alt="profile" class="w-full h-full object-cover">
             </div>
             <div class="flex flex-col opacity-0 translate-x-[-20px] pointer-events-none transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-x-0 group-hover:pointer-events-auto">
@@ -52,79 +53,83 @@
                 <h2 class="text-4xl font-semibold text-slate-400 mt-2 whitespace-nowrap">~ "Jdub"</h2>
             </div>
         </div>
-        <div class="flex flex-row items-center space-x-6 mt-12 w-fit group">
-            <div class=" w-40 h-40 rounded-full overflow-hidden flex-shirnk-0 transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:translate-x-[-24px]">
-                <img src="Images/Fits/fit2.jpeg" alt="story" class= "w-full h-full object-cover">
-            </div>
-            <div class="flex -flex-col opacity-0 translate-x-[-20px] pointer-events-none transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-x-0 group-hover:pointer-events-auto">
-                <p class = "m-6 mt-12 border-blue-900 border-4 rounded-md p-4 text-xl font-medium hover:scale-105">
-                    "The oak resists the wind and is broken. The willow bends, and it survives."
-                </p>
-            </div>
+        <div id="revealed-quote" class=" max-h-0 opacity-0 overflow-hidden transition-all ease-out text-center">
+            <p class = "m-6 mt-12 border-blue-900 border-4 rounded-md p-4 text-xl transition-transform duration-500 font-medium hover:scale-105">
+                "The oak resists the wind and is broken. The willow bends, and it survives."
+            </p>
         </div>
 
         <p class = "m-6 mt-4 border-blue-900 border-4 rounded-md p-4 text-xl font-medium hover:scale-105"> 
             Hi, I'm Jeremy, an aspring engineer, posessing skills, in software development, visual editing & football(soccer). With a passion for helping others, creating combined with creativity and problem solving.
             My motivations stem from a strong role model that thought alot like how I do now. My grandfather, an early inspiration fostered that core mindset and that I follow every day. He was a mechanic and an at-home inventor creating tools for our household that made life easier.
             From shadowing his projects he passed down to me his tech for solving problems creatively and I traansitioned that into my current skills and profile, in tech, Visual effects, Entrepeneurship and Football.
-        <div class ="m-6 mt-4 border-blue-900 border-4 rounded-md p-4 hover:scale-105">
-            <h3 class="text-6xl font-medium mb-6">Likes</h3>
-            <ul class="list-decimal list-inside space-y-2">
-                <li class="text-xl font-medium">Binge-watching</li> <img>
-                <li class="text-xl font-medium" >Coding</li> <img>
-                <li class="text-xl font-medium">CATS</li> <img>
-                <li class="text-xl font-medium">Soccer(It's football actually)</li>
-                <li class="text-xl font-medium">Favourite color: blue</li> <img>
-                <li class="text-xl font-medium">Chemistry, physics & Biology</li> <img>
-                <li class="text-xl font-medium">STEAM</li> <img>
-                <li class="text-xl font-medium">"A monster a day keeps the F away"</li>
-                <li class="text-xl font-medium">Listens to every genre but country</li>
-            </ul>
+        </p>
+        <div class="m-6 mt-4 border-blue-900 border-4 rounded-md p-4 bg-slate-950 transition-transform duration-500 hover:scale-105 group">
+            <h3 class="text-6xl font-medium mb-4 select-none group-hover:text-blue-400 transition-colors duration-300">
+                Likes
+            </h3>
+            <div class="grid grid-rows[0fr] transition-[grid-template-rows] duration-500 ease-in-out group-hover:grid-rows[-1fr]">
+                <div class="overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <ul class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
+                        <li class="text-xl font-medium">Binge-watching</li>
+                        <li class="text-xl font-medium">Coding</li>
+                        <li class="text-xl font-medium">CATS</li>
+                        <li class="text-xl font-medium">Football</li>
+                        <li class="text-xl font-medium">Favourite color: Blue</li>
+                        <li class="text-xl font-medium">Science</li>
+                        <li class="text-xl font-medium">Indie Rock</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div>
-            <div class = "m-6 mt-4 border-blue-900 border-4 rounded-md p-4 hover:scale-105">
-                <h3 class="text-6xl font-medium mb-6">Shows</h3>
-                <ol class="list-decimal list-inside space-y-2">
-                    <li class="text-xl font-medium"><a href="">Blue Eyed Samurai</a></li>
-                    <li class="text-xl font-medium"><a href="">Breaking Bad</a></li>
-                    <li class="text-xl font-medium"><a href="">Unstable SMP</a></li>
-                    <li class="text-xl font-medium"><a href="">Invincible</a></li>
-                    <li class="text-xl font-medium"><a href="">Trollhunters</a></li>
-                    <li class="text-xl font-medium"><a href="">Ninjago</a></li>
-                </ol>
+        <div class = "m-6 mt-4 border-blue-900 border-4 rounded-md p-4 bg-slate-950 transition-transform duration-500 hover:scale-105 group">
+            <h3 class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transitio-colors duration-300">
+                Shows
+            </h3>
+            <div class="grid grid-rows[0fr] transition-[grid-template-rows] duration-500 ease-in-out group-hover:grid-rows[-1fr]">
+                <div class="overflow-hidden opacity-0 transition-opacity duraiton-300 group-hover:opacity-100">
+                    <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
+                        <li class="text-xl font-medium"><a href="">Blue Eyed Samurai</a></li>
+                        <li class="text-xl font-medium"><a href="">Breaking Bad</a></li>
+                        <li class="text-xl font-medium"><a href="">Unstable SMP</a></li>
+                        <li class="text-xl font-medium"><a href="">Invincible</a></li>
+                        <li class="text-xl font-medium"><a href="">Trollhunters</a></li>
+                        <li class="text-xl font-medium"><a href="">Ninjago</a></li>
+                    </ol>
+                </div>
             </div>
-            <div class ="m-6 mt-4 border-blue-900 border-4 rounded-md p-4 hover:scale-105">
-                <h3 class="text-6xl font-medium mb-6">Animes</h3>
-                <ol class="list-decimal list-inside space-y-2">
-                    <li class="text-xl font-medium">Bleach</li>
-                    <li class="text-xl font-medium">Attack on Titan</li>
-                    <li class="text-xl font-medium">vinland Saga</li>
-                    <li class="text-xl font-medium">Death Note</li>
-                    <li class="text-xl font-medium">Chainsaw Man</li>
-                    <li class="text-xl font-medium">Naruto</li>
-                </ol>
-            </div>
-            <div class = "m-6 mt-12 border-blue-900 border-4 rounded-md p-4 hover:scale-105">
-                <h3 class="text-6xl font-medium mb-6">Dramas</h3>
-                <ol class="list-decimal list-inside space-y-2">
-                    <li class="text-xl font-medium">Weak Hero</li>
-                    <li class="text-xl font-medium">When I fly Towards You</li>
-                    <li class="text-xl font-medium">Alice In Borderland</li>
-                    <li class="text-xl font-medium">All Of Us Are Dead</li>
-                    <li class="text-xl font-medium">Squid Game</li>
-                </ol>
-            </div>
-            <div class = "m-6 mt-4 border-blue-900 border-4 rounded-md p-4 hover:scale-105">
-                <h3 class="text-6xl font-medium mb-6">Shows</h3>
-                <ol class="list-decimal list-inside space-y-2">
-                    <li class="text-xl font-medium"><a href="" class="">Blue Eyed Samurai</a></li>
-                    <li class="text-xl font-medium"><a hef="" class=""> Breaking Bad</a></li>
-                    <li class="text-xl font-medium">Unstable SMP</li>
-                    <li class="text-xl font-medium">Invincible</li>
-                    <li class="text-xl font-medium">Trollhunters</li>
-                    <li class="text-xl font-medium" ]>Ninjago</li>
-                </ol>
-            </div>
+        </div>
+        <div class ="m-6 mt-4 border-blue-900 border-4 rounded-md p-4 hover:scale-105">
+            <h3 class="text-6xl font-medium mb-6">Animes</h3>
+            <ol class="list-decimal list-inside space-y-2">
+                <li class="text-xl font-medium">Bleach</li>
+                <li class="text-xl font-medium">Attack on Titan</li>
+                <li class="text-xl font-medium">vinland Saga</li>
+                <li class="text-xl font-medium">Death Note</li>
+                <li class="text-xl font-medium">Chainsaw Man</li>
+                <li class="text-xl font-medium">Naruto</li>
+            </ol>
+        </div>
+        <div class = "m-6 mt-12 border-blue-900 border-4 rounded-md p-4 hover:scale-105">
+            <h3 class="text-6xl font-medium mb-6">Dramas</h3>
+            <ol class="list-decimal list-inside space-y-2">
+                <li class="text-xl font-medium">Weak Hero</li>
+                <li class="text-xl font-medium">When I fly Towards You</li>
+                <li class="text-xl font-medium">Alice In Borderland</li>
+                <li class="text-xl font-medium">All Of Us Are Dead</li>
+                <li class="text-xl font-medium">Squid Game</li>
+            </ol>
+        </div>
+        <div class = "m-6 mt-4 border-blue-900 border-4 rounded-md p-4 hover:scale-105">
+            <h3 class="text-6xl font-medium mb-6">Shows</h3>
+            <ol class="list-decimal list-inside space-y-2">
+                <li class="text-xl font-medium"><a href="" class="">Blue Eyed Samurai</a></li>
+                <li class="text-xl font-medium"><a hef="" class=""> Breaking Bad</a></li>
+                <li class="text-xl font-medium">Unstable SMP</li>
+                <li class="text-xl font-medium">Invincible</li>
+                <li class="text-xl font-medium">Trollhunters</li>
+                <li class="text-xl font-medium" ]>Ninjago</li>
+            </ol>
         </div>
         <div class="m-6 mt-4 border-blue-900 border-4 rounded-md p-4 hover:scale-105">
             <h3 class="text-6xl font-medium mb-6">Books</h3>
