@@ -14,7 +14,7 @@ function toggleQuote() {
 }
 function openLikes() {
     const dropdown = document.getElementById('likes-dropdown');
-    const dropdwon = document.getElementById('likes-content');
+    const content = document.getElementById('likes-content');
 
     const targetHeight = content.scrollHeight + 16;
 
