@@ -51,7 +51,7 @@ function closeShows() {
 
     dropdown.style.height= '0px'
     content.classList.remove('opacity-100');
-    content.cassList.add('opaciy-0')
+    content.classList.add('opaciy-0')
 }
 
 // Books Taste -------------------->
@@ -69,9 +69,9 @@ function closeBooks() {
     const dropdown = document.getElementById('books-dropdown');
     const content = document.getElementById('books-content');
 
-    dropdown.style.height= '0px'
+    dropdown.style.height = '0px'
     content.classList.remove('opacity-100');
-    content.cassList.add('opaciy-0')
+    content.classList.add('opacity-0')
 }
 
 // Anime Taste -------------------->
@@ -89,9 +89,9 @@ function closeAnime() {
     const dropdown = document.getElementById('anime-dropdown');
     const content = document.getElementById('anime-content');
 
-    dropdown.style.height= '0px'
+    dropdown.style.height = '0px'
     content.classList.remove('opacity-100');
-    content.cassList.add('opaciy-0')
+    content.classList.add('opacity-0')
 }
 
 // Drama Taste -------------------->
@@ -132,5 +132,5 @@ function closeSong() {
 
     dropdown.style.height= '0px'
     content.classList.remove('opacity-100');
-    content.cassList.add('opaciy-0')
+    content.classList.add('opacity-0')
 }
