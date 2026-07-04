@@ -67,10 +67,10 @@
             </p>
         </div>
         <div class="m-6 mt-4 border-blue-900 border-4 rounded-md p-4 bg-slate-950 transition-transform duration-500 hover:scale-105 group">
-            <h3 onmouseenter="openLikes()" class="text-6xl cursor-pointer font-medium mb-4 select-none group-hover:text-blue-400 transition-colors duration-300">
+            <h3 onmouseenter="openDrop('Likes')" class="text-6xl cursor-pointer font-medium mb-4 select-none group-hover:text-blue-400 transition-colors duration-300">
                 Likes
             </h3>
-            <div id="likes-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeLikes()">
+            <div id="likes-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('Likes')">
                 <div id="likes-content" class="overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <ul class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
                         <li class="text-xl font-medium">Binge-watching</li>
@@ -85,10 +85,10 @@
             </div>
         </div>
         <div class = "m-6 mt-4 border-blue-900 border-4 rounded-md p-4 bg-slate-950 transition-transform duration-500 hover:scale-105 group">
-            <h3 onmouseenter ="openShows()" class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-300">
+            <h3 onmouseenter ="openDrop('Shows')" class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-300">
                 Shows
             </h3>
-            <div id="shows-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeShows()">
+            <div id="shows-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('Shows')">
                 <div id="shows-content" class="overflow-hidden opacity-0 transition-opacity duraiton-300 group-hover:opacity-100">
                     <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
                         <li class="text-xl font-medium"><a href="">Blue Eyed Samurai</a></li>
@@ -102,10 +102,10 @@
             </div>
         </div>
         <div class="m-6 mt-4 border-blue-900 border-4 rounded-md p-4 bg-slate-950 transition-transform duration-500 hover:scale-105 group">
-            <h3 onmouseenter='openAnime()' class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-300 ">
+            <h3 onmouseenter="openDrop('Animes')" class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-300 ">
                 Animes
             </h3>
-            <div id="anime-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeAnime()">
+            <div id="anime-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('Animes')">
                 <div id="anime-content" class="overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
                         <li class="text-xl font-medium"><a href=""> Bleach</a></li>
@@ -120,10 +120,10 @@
         </div>
 
         <div class = "m-6 mt-4 border-blue-900 border-4 rounded-md p-4 bg-slate-950 transition-transform duration-500 hover:scale-105 group">
-            <h3 onmouseenter='openDrama()' class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-500">
+            <h3 onmouseenter="openDrop('Dramas')" class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-500">
                 Dramas
             </h3>
-            <div id='drama-dropdown' class="grid grid-rows[0fr] transition-[grid-template-row] duration-500 ease-in-out group-hover:grid-row[-1fr]" onmouseleave="closeDrama()">
+            <div id='drama-dropdown' class="grid grid-rows[0fr] transition-[grid-template-row] duration-500 ease-in-out group-hover:grid-row[-1fr]" onmouseleave="closeDrop('Dramas')">
                 <div id='drama-content' class="overflow-hidden opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                     <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
                         <li class="text-xl font-medium">Weak Hero</li>
@@ -136,17 +136,17 @@
             </div>
         </div>
         <div class="m-6 mt-4 border-blue-900 bg-slate-950 transition-transform duration-500 border-4 rounded-md p-4 hover:scale-105 group">
-            <h3 onmouseenter='openBooks()' class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-500">
+            <h3 onmouseenter="openDrop('Books')" class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-500">
                 Books
             </h3>
-            <div id='books-dropdown' class="ggrid grid-rows[0fr] transition-[grid-template-row] duration-300 ease-in-out group-hover:grid-row[-1fr]" onmouseleave="closeBooks()">
-                <div id='books-content' class="overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+            <div id='books-dropdown' class="grid grid-rows[0fr] transition-[grid-template-row] duration-500 ease-in-out group-hover:grid-row[-1fr]" onmouseleave="closeDrop('Books')">
+                <div id='books-content' class="overflow-hidden opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                     <ul class="space-y-2 pt-4 border-t border-blue-900/30">
-                        <li><a href="" class="text-xl">Alex Rider Series</a></li>
-                        <li><a href="" class="text-xl"> Refugee</a></li>
-                        <li><a hef="" class="text-xl">Outliers</a></li>
-                        <li><a href="" class="text-xl"> Guns. Germs & Steel</a></li>
-                        <li><a href="" class="text-xl">Apple In China</a></li>
+                        <li><a href="" class="text-xl font-medium">Alex Rider Series</a></li>
+                        <li><a href="" class="text-xl font-medium"> Refugee</a></li>
+                        <li><a hef="" class="text-xl font-medium">Outliers</a></li>
+                        <li><a href="" class="text-xl font-medium"> Guns. Germs & Steel</a></li>
+                        <li><a href="" class="text-xl font-medium">Apple In China</a></li>
                     </ul>
                 </div>
             </div>
