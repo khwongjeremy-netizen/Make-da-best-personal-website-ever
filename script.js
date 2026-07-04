@@ -38,4 +38,23 @@ function closeDrop(category) {
         content.classList.add('opacity-0');
     }
 }
+let imageTimeout;
+
+function changeImage(image) {
+    const preview = document.getElementById(`${image}-preview`);
+
+    if (preview) {
+
+        if (preview.scroll.includes(image)) return;
+
+        clearTimeout(imageTimeout);
+
+        preview.style.opacity = '0';
+
+        imageTimeout = setTimeout(() => {
+            preview.src = image;
+            preview.style.opacity = '1';
+        }, 200);
+    }
+}
 
