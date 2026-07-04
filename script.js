@@ -38,19 +38,19 @@ function closeDrop(category) {
 }
 let imageTimeout;
 
-function changeImage(image) {
+function changeImage(image, item) {
     const preview = document.getElementById(`${image}-preview`);
 
     if (preview) {
 
-        if (preview.scroll.includes(image)) return;
+        if (preview.scroll.includes(item)) return;
 
         clearTimeout(imageTimeout);
 
         preview.style.opacity = '0';
 
         imageTimeout = setTimeout(() => {
-            preview.src = image;
+            preview.src = item;
             preview.style.opacity = '1';
         }, 200);
     }
