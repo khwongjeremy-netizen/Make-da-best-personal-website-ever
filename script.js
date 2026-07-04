@@ -14,27 +14,23 @@ function toggleQuote() {
 }
 
 // Dropdown command
-/**
- * @param {string} category
- */
+
 function openDrop(category) {
-    const dropdown = document.getElementById('${category}-dropdown');
-    const content = document.getElementById('${category}-content');
+    const dropdown = document.getElementById(`${category}-dropdown`);
+    const content = document.getElementById(`${category}-content`);
 
     if (dropdown && content){
-        const targetHieght = content.scrollHieght + 16;
+        const targetHeight = content.scrollHeight + 16;
         dropdown.style.height = targetHeight + 'px';
         content.classList.remove('opacity-0');
         content.classList.add('opacity-100');
 
     }
 }
-/**
- * @param {string} category
- */
-function closeDrop() {
-    const dropdown = document.getElementById('${category}-dropdown');
-    const content = document.getElementById('${category}-content');
+
+function closeDrop(category) {
+    const dropdown = document.getElementById(`${category}-dropdown`);
+    const content = document.getElementById(`${category}-content`);
 
     if (dropdown && content) {
         dropdown.style.height = '0px';
