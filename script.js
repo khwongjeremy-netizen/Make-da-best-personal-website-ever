@@ -55,27 +55,3 @@ function changeImage(image) {
         }, 200);
     }
 }
-
-// Smooth Book Preview Cross-Fader
-let imageTimeout; 
-
-function changeBookImage(imagePath) {
-    const previewImage = document.getElementById('book-preview');
-    
-    if (previewImage) {
-        // Stop if the hovered item is already the active image displayed
-        if (previewImage.src.includes(imagePath)) return;
-
-        // Clear any previous queued transitions if the user hovers quickly
-        clearTimeout(imageTimeout);
-
-        // 1. Drop the visibility layer down smoothly
-        previewImage.style.opacity = '0';
-
-        // 2. Wait 200ms for it to turn invisible, then flip the file path and fade back up
-        imageTimeout = setTimeout(() => {
-            previewImage.src = imagePath;
-            previewImage.style.opacity = '1';
-        }, 200);
-    }
-}
