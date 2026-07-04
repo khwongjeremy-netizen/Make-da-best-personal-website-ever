@@ -134,19 +134,44 @@
             </div>
         </div>
         <div class="m-6 mt-4 border-blue-900 bg-slate-950 transition-transform duration-500 border-4 rounded-md p-4 hover:scale-105 group">
-            <h3 onmouseenter="openDrop('books')" class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-500">
+            <h3 onmouseenter="openDrop('books')" class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-500 cursor-pointer">
                 Books
             </h3>
-            <div id='books-dropdown' style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('books')">
-                <div id='books-content' class="overflow-hidden opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                    <ul class="space-y-2 pt-4 border-t border-blue-900/30">
-                        <img src="">
-                        <li><a href="" class="text-xl font-medium">Alex Rider Series</a></li>
-                        <li><a href="" class="text-xl font-medium"> Refugee</a></li>
-                        <li><a hef="" class="text-xl font-medium">Outliers</a></li>
-                        <li><a href="" class="text-xl font-medium"> Guns, Germs & Steel</a></li>
-                        <li><a href="" class="text-xl font-medium">Apple In China</a></li>
-                    </ul>
+            
+            <div id="books-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('books')">
+                <div id="books-content" class="overflow-hidden opacity-0 transition-opacity duration-500 group-hover:opacity-100">
+                    
+                    <!-- Flex Layout wrapper to put list and image side-by-side -->
+                    <div class="flex flex-row justify-between items-start pt-4 border-t border-blue-900/30 gap-8">
+                        
+                        <!-- Left Side: The List Items -->
+                        <ul class="space-y-4 flex-1">
+                            <!-- Pass the specific image path into changeBookImage() on hover -->
+                            <li onmouseenter="changeBookImage('Images/home/Books/Alex-rider.jpeg')">
+                                <a href="#" class="text-xl font-medium hover:text-blue-400 transition-colors">Alex Rider Series</a>
+                            </li>
+                            <li onmouseenter="changeBookImage('Images/home/Books/refugee.jpeg')">
+                                <a href="#" class="text-xl font-medium hover:text-blue-400 transition-colors">Refugee</a>
+                            </li>
+                            <li onmouseenter="changeBookImage('Images/home/Books/outlier.jpeg')">
+                                <a href="#" class="text-xl font-medium hover:text-blue-400 transition-colors">Outliers</a>
+                            </li>
+                            <li onmouseenter="changeBookImage('Images/home/Books/GGS.jpg')">
+                                <a href="#" class="text-xl font-medium hover:text-blue-400 transition-colors">Guns, Germs & Steel</a>
+                            </li>
+                            <li onmouseenter="changeBookImage('Images/home/Books/apple.jpeg')">
+                                <a href="#" class="text-xl font-medium hover:text-blue-400 transition-colors">Apple In China</a>
+                            </li>
+                        </ul>
+
+                        <!-- Right Side: Fixed Cover Frame Container -->
+                        <div class="w-36 h-52 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
+                            <!-- Default state can be empty or a default placeholder image path -->
+                            <img id="book-preview" src="Images/home/Books/Alex_rider.jpeg" alt="Book Cover Preview" class="w-full h-full object-cover transition-all duration-300">
+                        </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>
