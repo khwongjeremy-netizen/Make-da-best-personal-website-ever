@@ -14,7 +14,9 @@ function toggleQuote() {
 }
 
 // Dropdown command
- @param {string} category
+/**
+ * @param {string} category
+ */
 function openDrop(category) {
     const dropdown = document.getElementById('${category}-dropdown');
     const content = document.getElementById('${category}-content');
@@ -27,8 +29,9 @@ function openDrop(category) {
 
     }
 }
-
-@param {string} category
+/**
+ * @param {string} category
+ */
 function closeDrop() {
     const dropdown = document.getElementById('${category}-dropdown');
     const content = document.getElementById('${category}-content');
