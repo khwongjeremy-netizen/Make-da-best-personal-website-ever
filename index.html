@@ -72,16 +72,28 @@
             </h3>
             <div id="likes-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('likes')">
                 <div id="likes-content" class="overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <ul class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
-                        <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/')"><a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">Coding</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/')"><a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">CATS</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/')"><a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">Football</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/')"><a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">Tech</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/')"><a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">Indie Rock</a></li>
-                    </ul>
+                    <div class="flex flex-row justify-between items-start pt-4 broder-t border-blue-900/30">
+                        <ul class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
+                            <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/coding')">
+                                <a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">Coding</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/cat.jpeg')">
+                                <a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">CATS</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/football.jpeg')">
+                                <a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">Football</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/tech.jpeg')">
+                                <a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">Tech</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/overtonight.jpeg')">
+                                <a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">Indie Rock</a>
+                            </li>
+                        </ul>
 
-                     <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
-                        <img id="likes-preview" src="Images/home/Likes/" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
+                        <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
+                            <img id="likes-preview" src="Images/home/Likes/" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,16 +104,28 @@
             </h3>
             <div id="shows-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('shows')">
                 <div id="shows-content" class="overflow-hidden opacity-0 transition-opacity duraiton-300 group-hover:opacity-100">
-                    <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
-                        <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/blue-eyed-samurai.jpg')"><a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Blue Eyed Samurai</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/breakingbad.jpeg')"><a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Breaking Bad</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/unstable.jpg')"><a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Unstable SMP</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/invincible.jpeg')"><a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Invincible</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/trollhunters.jpeg')"><a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Trollhunters</a></li>
-                    </ol>
+                    <div class="flex flex-row justify-between items-start pt-4 border-t border-blue-900/30">
+                        <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
+                            <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/blue-eyed-samurai.jpg')">
+                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Blue Eyed Samurai</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/breakingbad.jpeg')">
+                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Breaking Bad</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/unstable.jpg')">
+                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Unstable SMP</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/invincible.jpeg')">
+                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Invincible</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/trollhunters.jpeg')">
+                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Trollhunters</a>
+                            </li>
+                        </ol>
 
-                     <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
-                        <img id="shows-preview" src="Images/home/Shows/" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
+                        <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
+                            <img id="shows-preview" src="Images/home/Shows/" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -112,16 +136,30 @@
             </h3>
             <div id="anime-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('anime')">
                 <div id="anime-content" class="overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
-                        <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/bleach.jpg')"><a href="" class="text-xl font-medium hover:text-blue-400 transition-colors"> Bleach</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/aot.jpg')"><a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Attack on Titan</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/vinland.jpg')"><a href="" class="text-xl font-medium hover:text-blue-400 transition-colors"> Vinland Saga</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/deathnote.jpg')"><a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Death Note</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/chainsawman.jpeg')"><a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Chainsaw Man</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/naruto.jpeg')"><a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Naruto</a></li>
-                    </ol>
-                    <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
-                        <img id="anime-preview" src="" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
+                    <div class="flex flex-row justify-between items-start pt-4 border-t border-blue-900/30">
+                        <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
+                            <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/bleach.jpg')">
+                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors"> Bleach</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/aot.jpg')">
+                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Attack on Titan</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/vinland.jpg')">
+                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors"> Vinland Saga</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/deathnote.jpg')">
+                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Death Note</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/chainsawman.jpeg')">
+                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Chainsaw Man</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/naruto.jpeg')">
+                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Naruto</a>
+                            </li>
+                        </ol>
+                        <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
+                            <img id="anime-preview" src="" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -133,18 +171,29 @@
             </h3>
             <div id='drama-dropdown' style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('drama')">
                 <div id='drama-content' class="overflow-hidden opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                    <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
-                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/weak-hero.jpeg')"><a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">Weak hero</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/wifty.jpeg')"><a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">When I fly towards you</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/alice.jpg')"><a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">Alice In Borderland</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/aouad.jpeg')"><a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">All of us are dead</a></li>
-                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/squid.jpg')"><a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">Squid Game</a></li>
-                    </ol>
+                    <div class="flex flex-row justify-between items-start pt-4 border-t border-blue-900/30">
+                        <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
+                            <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/weak-hero.jpeg')">
+                                <a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">Weak hero</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/wifty.jpeg')">
+                                <a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">When I fly towards you</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/alice.jpg')">
+                                <a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">Alice In Borderland</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/aouad.jpeg')">
+                                <a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">All of us are dead</a>
+                            </li>
+                            <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/squid.jpg')">
+                                <a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">Squid Game</a>
+                            </li>
+                        </ol>
 
-                    <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
-                        <img id="dramas-preview" src="Images/home/Dramas/weak-hero.jpeg" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
+                        <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
+                            <img id="dramas-preview" src="Images/home/Dramas/weak-hero.jpeg" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
