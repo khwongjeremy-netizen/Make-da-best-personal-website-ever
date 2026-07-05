@@ -106,13 +106,16 @@
             <div id="anime-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('anime')">
                 <div id="anime-content" class="overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                     <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
-                        <li class="text-xl font-medium"><a href=""> Bleach</a></li>
-                        <li class="text-xl font-medium"><a href="">Attack on Titan</a></li>
-                        <li class="text-xl font-medium"><a href=""> Vinland Saga</a></li>
-                        <li class="text-xl font-medium"><a href="">Death Note</a></li>
-                        <li class="text-xl font-medium"><a href="">Chainsaw Man</a></li>
-                        <li class="text-xl font-medium"><a href="">Naruto</a></li>
+                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Animes/')"><a href=""> Bleach</a></li>
+                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Animes/')"><a href="">Attack on Titan</a></li>
+                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Animes/')"><a href=""> Vinland Saga</a></li>
+                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Animes/')"><a href="">Death Note</a></li>
+                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Animes/')"><a href="">Chainsaw Man</a></li>
+                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Animes/')"><a href="">Naruto</a></li>
                     </ol>
+                    <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
+                        <img id="anime-preview" src="images/home/Animes/" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
+                    </div>
                 </div>
             </div>
         </div>
@@ -124,12 +127,17 @@
             <div id='drama-dropdown' style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('drama')">
                 <div id='drama-content' class="overflow-hidden opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                     <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
-                        <li class="text-xl font-medium">Weak Hero</li>
-                        <li class="text-xl font-medium">When I fly Towards You</li>
-                        <li class="text-xl font-medium">Alice In Borderland</li>
-                        <li class="text-xl font-medium">All Of Us Are Dead</li>
-                        <li class="text-xl font-medium">Squid Game</li>
+                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/')"><a>Weak hero</a></li>
+                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/')"><a>When I fly towards you</a></li>
+                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/')"><a>Alice In Borderland</a></li>
+                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/')"><a>All of us are dead</a></li>
+                        <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/')"><a>Squid Game</a></li>
                     </ol>
+
+                    <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
+                        <img id="dramas-preview" src="Images/home/Dramas/" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -162,11 +170,7 @@
                         </ul>
 
                         <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
-                            <img id="book-preview" 
-                                src="Images/home/Books/Alex-rider.jpeg" 
-                                alt="Book Cover Preview" 
-                                style="transition: opacity 0.2s ease-in-out; opacity: 1;"
-                                class="w-full h-full object-cover">
+                            <img id="book-preview" src="Images/home/Books/Alex_rider.jpeg" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
                         </div>
 
                     </div>
