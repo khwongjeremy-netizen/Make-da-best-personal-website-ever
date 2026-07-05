@@ -43,7 +43,7 @@ function changeImage(image, item) {
 
     if (preview) {
 
-        if (preview.scroll.includes(item)) return;
+        if (preview.src.includes(item)) return;
 
         clearTimeout(imageTimeout);
 
