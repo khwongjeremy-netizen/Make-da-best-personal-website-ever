@@ -44,39 +44,34 @@
 
     <main>
         <!--List of characteristics-->
-        <h1 class="text-6xl font-semibold mt-12 transition-all duration-500 ease-in-out hover:scale-110 mb-6">Jeremy Wong</h1>
-        <div class=" flex flex-row m-6 mt-12 rounded-md p-4 items-start hover:scale-105 transition-transform duration-500 ease-in-out pt-4 border-4 border-blue-900">
-            <ul class="list-inside space-y-2">
-                <li class = "hover:scale-105 font-medium transition-all duration-500 ease-in-out">
+        <h1 class="flex justify-center text-6xl font-semibold mt-12 transition-all duration-500 ease-in-out hover:scale-110 mb-6">Jeremy Wong</h1>
+        <div class="flex flex-row m-6 mt-12 rounded-md p-4 items-start hover:scale-105 transition-transform duration-500 ease-in-out pt-4 border-4 border-blue-900 gap-12">
+            <ul class="list-inside space-y-2 flex-1">
+                <li class="hover:scale-105 font-medium transition-all duration-500 ease-in-out" onmouseenter="changeImage('about', 'Images/home/About/istj.jpeg')">
                     <a href="">ISTJ(Logician)</a>
                 </li>
-                <li class = "hover:scale-105 font-medium transition-all duration-500 ease-in-out">
+                <li class="hover:scale-105 font-medium transition-all duration-500 ease-in-out" onmouseenter="changeImage('about', 'Images/home/About/birthday.jpeg')">
                     2010/14/10
                 </li>
-                <li class ="hover:scale-105 transition-all duration-500 ease-in-out">
+                <li class="hover:scale-105 transition-all duration-500 ease-in-out" onmouseenter="changeImage('about', 'Images/home/About/cat.jpeg')">
                     <a href="">Cat Person</a>
                 </li>
-                <li class = "hover:scale-105 font-medium transition-all duration-500 ease-in-out">
+                <li class="hover:scale-105 font-medium transition-all duration-500 ease-in-out" onmouseenter="changeImage('about', 'Images/home/About/stem.jpeg')">
                     <a href="">STEM-Entusiast</a>
                 </li>
-                <li class="hover:scale-105 font-medium transition-all duration-500 ease-in-out">
+                <li class="hover:scale-105 font-medium transition-all duration-500 ease-in-out" onmouseenter="changeImage('about', 'Images/home/About/china.jpeg')">
                     Chinese
                 </li>
             </ul>
-            <div class="w-32 h-40 bg-slate-900 border-blue-900/40 roudned shadow-md overflow-hidden flex-shrink- 0 flex items-center justify-center"> 
-                <img id="about-preview" src="" style=" transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-fill h-full object-cover">
+            <div class=" w-40 h-40 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center"> 
+                <img id="about-preview" 
+                    src="Images/home/About/istj.jpeg" 
+                    style="transition: opacity 0.2s ease-in-out; opacity: 1;" 
+                    class="w-full h-full object-cover">
             </div>
         </div>
-        <!-- Introduction to my profile/story-->
-        <div class="m-6 mt-6 border-blue-900 border-4 rounded-md p-4">
-            <h3 class="text-4xl font-medium">Intro</h3>
-            <p class= "text-xl font-medium mt-4"> 
-                The inspiration of my role models set me on a path that matcehd their impact on me. As a result I took a dive into the STEM environment
-                exploring many sciences, maths & topics while also trying a variety of events, contests & experiences that nutured my passion expanding it.
-            </p>
-        </div>
         <!-- Year 2023 of my journey(What hapened in grade 7)-->
-        <div class = "m-6 mt-12 border-blue-900 border-4 rounded-md p-4 text-xl font-medium hover:scale-105 transition-trasnform duration-500 ease-in-out">
+        <div class = "scroll-reveal opactiy-0 translate-y-8 transiton-all duration-700 ease-out m-6 mt-12 border-blue-900 border-4 rounded-md p-4 text-xl font-medium hover:scale-105">
             <h3 class="text-4xl font-medium">Year 2023</h3>
             <image></image>
             <p class = "mt-4"> 
