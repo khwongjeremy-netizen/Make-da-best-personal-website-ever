@@ -57,7 +57,7 @@ function changeImage(image, item) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const revealTargets = document.querySelectorAll("scroll-reveal");
+    const revealTargets = document.querySelectorAll(".scroll-reveal");
 
     if (revealTargets.length === 0) return;
 
@@ -77,5 +77,5 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }, observerOptions);
 
-    revealTargets.forEach(traget => scrollObserver.observe(target));
+    revealTargets.forEach(target => scrollObserver.observe(target));
 })
