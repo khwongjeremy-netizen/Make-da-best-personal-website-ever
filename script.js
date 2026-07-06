@@ -55,3 +55,27 @@ function changeImage(image, item) {
         }, 200);
     }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const revealTargets = document.querySelectorAll(".scroll-reveal");
+
+    if (revealTargets.length === 0) return;
+
+    const observerOptions = {
+        root: null, 
+        threshold: 0.15,
+        rootMargin: "0px"
+    };
+
+    const scrollObserver = new IntersectionObserver((entries, oberver) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("opacity-0", "translate-y-8");
+
+                observerOptions.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    revealTargets.forEach(traget => scrollObserver.observe(target));
+})
