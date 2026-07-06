@@ -57,7 +57,7 @@ function changeImage(image, item) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const revealTargets = document.querySelectorAll(".scroll-reveal");
+    const revealTargets = document.querySelectorAll("scroll-reveal");
 
     if (revealTargets.length === 0) return;
 
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (entry.isIntersecting) {
                 entry.target.classList.remove("opacity-0", "translate-y-8");
 
-                observerOptions.unobserve(entry.target);
+                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
