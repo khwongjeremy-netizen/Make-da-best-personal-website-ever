@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const scrollObserver = new IntersectionObserver((entries, oberver) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.remove("opacity-0", "translate-y-8");
+                entry.target.classList.remove("opacity-0", "translate-y-16", "scale-95");
 
                 observer.unobserve(entry.target);
             }
