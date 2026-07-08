@@ -38,3 +38,5 @@ https://alkemymarket.com/pricing
 - include more hovers 
 have. a background or an interactive cursor feature 
 -glowy aeshteitic possibly. 
+
+Going to start drafting up new design of website 
