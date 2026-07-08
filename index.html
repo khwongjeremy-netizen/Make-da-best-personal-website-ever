@@ -1,288 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jdub's portfolio</title>
-    
-    <!-- Meta Description for SEO -->
-    <meta name="description" content="A brief description of your webpage content.">
-    
-    <!-- Favicon Link -->
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-    
-    <!-- External CSS Stylesheet -->
-     <link rel="stylesheet" href="style.css">
-     <link rel="stylesheet" href="dist.css">
-     <script src="./script.js"></script>
-    
-</head>
-<body class = "bg-slate-950 text-slate-100">
+    <head>
+        <title>Jeremy Wong</title>
+    </head>
+    <body>
+        <header>
+            <img src="">
+            <ul>
+                <li>
+                    <h1>J</h1>
+                    <div>
+                        <h3>
+                            
+                        </h3>
+                        <p>
 
-    <!-- Semantic Layout Components -->
-    <header class = "">
-        <nav class = "bg-slate-50 border-y border-blue-900 text-slate-950">
-            <div class="max-w-screen-x1 px-4 py-3 mx-auto">
-                <div class = "flex items-center">
-                    <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
-                        <li>
-                            <a href="index.html" class="text-slate-650 hover:text-white transition-colors" aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="story.html" class="text-slate-650 hover:text-white transition-colors" aria-current="page">Story</a>
-                        </li>
-                        <li>
-                            <a href="projects.html" class="text-slate-650 hover:text-white transition-colors" aria-current="page">Projects</a>
-                        </li>
-                        <li>
-                            <a href="contacts.html" class="text-slate-650 hover:text-white transition-colors" aria-current="page">Contacts</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <h1>E</h1>
+                    <div>
+                        <h3>
+                            Books
+                        </h3>
+                        <p>
 
-    <main>
-        <div class="flex flex-row items-center space-x-6 mt-12 mx-auto w-fit group">
-            <div onclick="toggleQuote()" class=" w-40 h-40 rounded-full overflow-hidden flex-shrink-0 transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:translate-x-[-24px]">
-                <img src="Images/Fits/fit1.jpeg" alt="profile" class="w-full h-full object-cover">
-            </div>
-            <div class="flex flex-col opacity-0 translate-x-[-20px] pointer-events-none transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-x-0 group-hover:pointer-events-auto">
-                <h1 class="text-6xl font-semibold text-slate-100 whitespace-nowrap">Jeremy Wong</h1>
-                <h2 class="text-4xl font-semibold text-slate-400 mt-2 whitespace-nowrap">~ "Jdub"</h2>
-            </div>
-        </div>
-        <div id="revealed-quote" class=" max-h-0 opacity-0 overflow-hidden transition-all ease-out text-center">
-            <p class = "m-6 mt-12 border-blue-900 border-4 rounded-md p-4 text-xl transition-transform duration-500 font-medium hover:scale-105">
-                "The oak resists the wind and is broken. The willow bends, and it survives."
-            </p>
-        </div>
-
-        <div class="m-6 mt-4 border-blue-900 border-4 rounded-md p-4 bg-slate-950 transition-transform duration-500 hover:scale-105 group ">
-            <p class = "m-6 mt-4 border-blue-900 border-4 rounded-md p-4 text-xl font-medium ease-in-out transition-colors select-none group-hover:text-blue-400"> 
-                Hi, I'm Jeremy, an aspring engineer, posessing skills, in software development, visual editing & football(soccer). With a passion for helping others, creating combined with creativity and problem solving.
-                My motivations stem from a strong role model that thought alot like how I do now. My grandfather, an early inspiration fostered that core mindset and that I follow every day. He was a mechanic and an at-home inventor creating tools for our household that made life easier.
-                From shadowing his projects he passed down to me his tech for solving problems creatively and I traansitioned that into my current skills and profile, in tech, Visual effects, Entrepeneurship and Football.
-            </p>
-        </div>
-        <div class="m-6 mt-4 border-blue-900 border-4 rounded-md p-4 bg-slate-950 transition-transform duration-500 hover:scale-105 group">
-            <h3 onmouseenter="openDrop('likes')" class="text-6xl cursor-pointer font-medium mb-4 select-none group-hover:text-blue-400 transition-colors duration-300">
-                Likes
-            </h3>
-            <div id="likes-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('likes')">
-                <div id="likes-content" class="overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <div class="flex flex-row justify-between items-start pt-4 border-t border-blue-900/30">
-                        <ul class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
-                            <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/coding.png')">
-                                <a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">Coding</a>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <h1>R</h1>
+                    <div>
+                        <h3>
+                            Shows
+                        </h3>
+                    </div>
+                </li>
+                <li>
+                    <h1>E</h1>
+                    <div>
+                        <h3>
+                            Animes
+                        </h3>
+                        <ul>
+                            <li>
+                                Bleach
                             </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/cat.jpeg')">
-                                <a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">CATS</a>
+                            <li>
+                                Attack On Titan
                             </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/football.jpg')">
-                                <a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">Football</a>
+                            <li>
+                                Vinland Saga
                             </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/tech.jpeg')">
-                                <a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">Tech</a>
+                            <li>
+                                Death Note
                             </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('likes', 'Images/home/Likes/overtonight.jpeg')">
-                                <a href="" class = "text-xl font-medium hover:text-blue-400 transition-colors">Indie Rock</a>
+                            <li>
+                                Chainsawman
                             </li>
                         </ul>
-
-                        <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
-                            <img id="likes-preview" src="Images/home/Likes/" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
-                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class = "m-6 mt-4 border-blue-900 border-4 rounded-md p-4 bg-slate-950 transition-transform duration-500 hover:scale-105 group">
-            <h3 onmouseenter ="openDrop('shows')" class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-300">
-                Shows
-            </h3>
-            <div id="shows-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('shows')">
-                <div id="shows-content" class="overflow-hidden opacity-0 transition-opacity duraiton-300 group-hover:opacity-100">
-                    <div class="flex flex-row justify-between items-start pt-4 border-t border-blue-900/30">
-                        <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
-                            <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/blue-eyed-samurai.jpg')">
-                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Blue Eyed Samurai</a>
+                </li>
+                <li>
+                    <h1>M</h1>
+                    <div>
+                        <h3>Music</h3>
+                        <ul>
+                            <li>
+                                Apple Cider by Beabadoobee
                             </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/breakingbad.jpeg')">
-                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Breaking Bad</a>
+                            <li>
+                                just a dream by yel
                             </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/unstable.jpg')">
-                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Unstable SMP</a>
+                            <li>
+                                lost cause by Isabella Peng
                             </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/invincible.jpeg')">
-                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Invincible</a>
+                            <li>
+                                Sweet Boy by Malcolm Todd
                             </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('shows', 'Images/home/Shows/trollhunters.jpeg')">
-                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Trollhunters</a>
-                            </li>
-                        </ol>
-
-                        <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
-                            <img id="shows-preview" src="Images/home/Shows/" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="m-6 mt-4 border-blue-900 border-4 rounded-md p-4 bg-slate-950 transition-transform duration-500 hover:scale-105 group">
-            <h3 onmouseenter="openDrop('anime')" class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-300 ">
-                Animes
-            </h3>
-            <div id="anime-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('anime')">
-                <div id="anime-content" class="overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <div class="flex flex-row justify-between items-start pt-4 border-t border-blue-900/30">
-                        <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
-                            <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/bleach.jpg')">
-                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors"> Bleach</a>
-                            </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/aot.jpg')">
-                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Attack on Titan</a>
-                            </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/vinland.jpg')">
-                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors"> Vinland Saga</a>
-                            </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/deathnote.jpg')">
-                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Death Note</a>
-                            </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/chainsawman.jpeg')">
-                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Chainsaw Man</a>
-                            </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('anime', 'Images/home/Animes/naruto.jpeg')">
-                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Naruto</a>
-                            </li>
-                        </ol>
-                        <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
-                            <img id="anime-preview" src="" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class = "m-6 mt-4 border-blue-900 border-4 rounded-md p-4 bg-slate-950 transition-transform duration-500 hover:scale-105 group">
-            <h3 onmouseenter="openDrop('drama')" class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-500">
-                Dramas
-            </h3>
-            <div id='drama-dropdown' style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('drama')">
-                <div id='drama-content' class="overflow-hidden opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                    <div class="flex flex-row justify-between items-start pt-4 border-t border-blue-900/30">
-                        <ol class="list-decimal list-inside space-y-2 pt-4 border-t border-blue-900/30">
-                            <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/weak-hero.jpeg')">
-                                <a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">Weak hero</a>
-                            </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/wifty.jpeg')">
-                                <a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">When I fly towards you</a>
-                            </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/alice.jpg')">
-                                <a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">Alice In Borderland</a>
-                            </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/aouad.jpeg')">
-                                <a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">All of us are dead</a>
-                            </li>
-                            <li class="text-xl font-medium" onmouseenter="changeImage('dramas', 'Images/home/Dramas/squid.jpg')">
-                                <a href = '#' class="text-xl font-medium hover:text-blue-400 transition-colors">Squid Game</a>
-                            </li>
-                        </ol>
-
-                        <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
-                            <img id="dramas-preview" src="Images/home/Dramas/weak-hero.jpeg" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="m-6 mt-4 border-blue-900 bg-slate-950 transition-transform duration-500 border-4 rounded-md p-4 hover:scale-105 group">
-            <h3 onmouseenter="openDrop('books')" class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-500 cursor-pointer">
-                Books
-            </h3>
-            
-            <div id="books-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('books')">
-                <div id="books-content" class="overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    
-                    <div class="flex flex-row justify-between items-start pt-4 border-t border-blue-900/30 gap-8">
-                        
-                        <ul class="space-y-4 flex-1">
-                            <li onmouseenter="changeImage('book', 'Images/home/Books/Alex_rider.jpeg')">
-                                <a href="#" class="text-xl font-medium hover:text-blue-400 transition-colors">Alex Rider Series</a>
-                            </li>
-                            <li onmouseenter="changeImage('book', 'Images/home/Books/refugee.jpeg')">
-                                <a href="#" class="text-xl font-medium hover:text-blue-400 transition-colors">Refugee</a>
-                            </li>
-                            <li onmouseenter="changeImage('book', 'Images/home/Books/outlier.jpeg')">
-                                <a href="#" class="text-xl font-medium hover:text-blue-400 transition-colors">Outliers</a>
-                            </li>
-                            <li onmouseenter="changeImage('book', 'Images/home/Books/GGS.jpg')">
-                                <a href="#" class="text-xl font-medium hover:text-blue-400 transition-colors">Guns, Germs & Steel</a>
-                            </li>
-                            <li onmouseenter="changeImage('book', 'Images/home/Books/apple.jpeg')">
-                                <a href="#" class="text-xl font-medium hover:text-blue-400 transition-colors">Apple In China</a>
+                            <li>
+                                twenytyfour by overtonight
                             </li>
                         </ul>
-
-                        <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 flex items-center justify-center">
-                            <img id="book-preview" src="Images/home/Books/Alex_rider.jpeg" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
-                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-            
-        <div class="m-6 mt-4 border-blue-900 bg-slate-950 transition-transform duration-500 border-4 rounded-md p-4 hover:scale-105 group">
-            <h3 onmouseenter="openDrop('music')" class="text-6xl font-medium mb-6 select-none group-hover:text-blue-400 transition-colors duration-500 cursor-pointer">
-                Music
-            </h3>
-
-            <div id="music-dropdown" style="height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" onmouseleave="closeDrop('music')">
-                <div id="music-content" class="overflow-hidden opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <div class="flex flex-row justify-between items-start pt-4 border-t border-blue-900/30 gap-8">
-                        <ul class="space-y-4 flex-1">
-                            <li onmouseenter="changeImage('music', 'Images/home/Music/applecider.jpeg')">
-                                <a href="" class="text-xl font-medium hover:text-blue-400 trasnition-colors">Apple Cider by Beabadoobee</a>
+                </li>
+                <li>
+                    <h1>Y</h1>
+                    <div>
+                        <h3>
+                            Likes
+                        </h3>
+                        <ul>
+                            <li>
+                                Coding
                             </li>
-                            <li onmouseenter="changeImage('music', 'Images/home/Music/justadream.jpeg')">
-                                <a href='' class='text-xl font-medium hover:text-blue-400 transition-colors'>Just a dream by yel</a>
+                            <li>
+                                Football
                             </li>
-                            <li onmouseenter="changeImage('music',  'Images/home/Music/lostcause.jpeg')">
-                                <a href="" class="text-xl font-medium hover:text-blue-400 transition-colors">Lost cause by Isabella Peng</a> 
+                            <li>
+                                Photography
                             </li>
-                            <li onmouseenter="changeImage('music', 'Images/home/Music/sweetboy.jpeg')">
-                                <a href="" class='text-xl font-medium hover:text-blue-400 transition-colors'>Sweet boy by Malcolm todd</a>
+                            <li>
+                                Business
                             </li>
-                            <li onmouseenter="changeImage('music', 'Images/home/Music/twentyfour.jpeg')">
-                                <a href="" class='text-xl font-medium hover:text-blue-400 transition-colors'>twentyfour by overtonight</a>
+                            <li>
+                                STEM
                             </li>
                         </ul>
-
-                        <div class="w-36 h-44 bg-slate-900 border border-blue-900/40 rounded shadow-md overflow-hidden flex-shrink-0 items-center justify-center">
-                            <img id="music-preview" src="" style="transition: opacity 0.2s ease-in-out; opacity: 1;" class="w-full h-full object-cover">
-                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-
-    <footer>
-        <p>&copy; 2026 Your Name. All rights reserved.</p>
-    </footer>
-
-    <script src="./index.js"></script>
-</body>
+                </li>
+            </ul>
+        </header>
+    </body>
 </html>
-
-<!-- https://youtu.be/43DPxOTrR4g?si=lF5195XcpOoJts_r -->
- <!--npx @tailwindcss/cli -i ./style.css -o ./dist.css --watch-->
- <!--Default settings:
- h1(headers:
- class="text-slate-950 hover:text-white transition-colors" aria-current="page"
- h2(subheaders:
- class = "text-4xl font-semibold text-center mt-6 hover:scale-110"
-text:
--->
