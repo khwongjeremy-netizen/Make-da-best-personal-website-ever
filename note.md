@@ -17,3 +17,24 @@ Nothin' - https://www.noth.in/
 - abolish conventional layouts for contetn replacing them with creative, mysterious, unique layouts
 - make high use of images and spacing and videos 
 - choose colours that represent my story or the type of person I am
+
+https://tomoyaokada.com/ 
+
+-loading screens build suspense to the actual next page,
+- great use of 3d visuals and effects
+
+my moves:
+-interperet more 3d visuals and effects 
+- use loading screens in my website as well
+
+
+https://alkemymarket.com/pricing
+-an intractive background ehader, 
+-glowy aesthetic visuyasl and colour schemes
+-design highly reflects the branding 
+- good use of hovers and mouse effects
+
+- my moves:
+- include more hovers 
+have. a background or an interactive cursor feature 
+-glowy aeshteitic possibly. 
