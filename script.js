@@ -79,3 +79,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
     revealTargets.forEach(target => scrollObserver.observe(target));
 })
+document.addEventListener("DOMContentLoaded", () => {
+    const canvas = document.getElemenbtByID('fluid-canvas');
+
+    if (!canvas) return;
+
+    window.WebGLFLuid(canvas, {
+        IMMEDIATE: true, 
+        TRIGGER: 'hover', 
+        SIM_RESOLUTION: 128,
+        DYE_RESOLUTION: 512,
+        CAPTURE_INPUTS: true,
+        DENSITY_DISSIPATION: 1.9,
+        VELOCITY_DISSIPATION: 0.98,
+        PRESSURE: 0.8,
+        BACK_COLOR: { r: 8, g: 8, b:10
+        },
+        BACKGROUND_TEXTURE: ""
+    });
+});
