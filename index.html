@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Jeremy Wong</title>
-    </head>
-    <body class="bg-slate-950 text-slate-100 min-h-screen relative overflow-x-hidden">
-        <div id="hk_bg" class="fixed inset-0 z-0 pointer-events-none bg-cover transition-all duration-[1500ms] cubic-bezier(0.25, 1, 0.5 1) scale-125 filterbrightness-[0.25] contrast-110" style =" background-image: url('Images/home/hk.jpg'); background-position: 20% center;">
+        <meta charset="UTFD-8">
+        <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
 
+        <title>Jeremy Wong</title>
+        <link rel="stylesheet" href = "dist.css">
+
+    </head>
+    <body class="bg-[#08080a] text-slate-100 min-h-screen relative overflow-x-hidden select-none">
+
+        <div id="hk_bg" class="fixed inset-0 z-0 pointer-events-none bg-cover transition-all duration-[1500ms] cubic-bezier(0.25, 1, 0.5 1) scale-150 filter brightness-[0.25] contrast-[1.15]" 
+            style =" background-image: url('Images/home/hk.jpg'); background-position: 20% center;">
         </div>
-        <header classs="relative z-10 min-h-screen flex flex-rows items-center justify-center px-4">
+        <header classs="relative z-10 min-h-screen flex flex-col md:flex-row items-center justify-center max-w-6xl mx-auto px-6 gap-12 py-12">
+            
             <div class="flex flex-col md: flex-row items-center gap-8 cursor-pointer group select-none" onclick="toggleHeader()">
                 <img src="">
                 <ul>
@@ -168,6 +175,6 @@
             <img src="">
             <p></p>
         </div>
-
+        <script src="script.js"></script>
     </body>
 </html>
