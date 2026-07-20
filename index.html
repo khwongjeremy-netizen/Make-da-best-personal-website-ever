@@ -9,17 +9,21 @@
 
     </head>
     <body class="bg-[#08080a] text-slate-950 min-h-screen relative overflow-x-hidden select-none">
-        <header id ="interactive_header" class="relative flex h-[600px] w-full items-center justify-center overflow-hidden bg-red-500">
-            <div id="interactive_bg" 
-            class="absolute inset-0 z-0 scale-110 bg-cover bg-center transition-transform duration-100 ease-out" 
-            style = "background-image: url('./Images/home/hk.jpg');">
+        <script type="module" src="http://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
+        <header id ="interactive_header" class="relative flex h-[600px] w-full items-center justify-center overflow-hidden bg-black">
+            <div class ="absolute inset-0 z-0">
+                <spline-viewer url = "https://my.spline.design/glasslogoanimationforwebsite-3NCblA3Ges2qt4jnZ3kQiGc8/scene.splinecode"></spline-viewer>
             </div>
-            <div class ="relative z-10 text-center text-white">
-                <h1 class = "text-4xl font-bold">JEREMY</h1>
-
-                <p class ="mt-4 text-slate-400"> PARAGRAPH</p>
+            <div class="relative z-10 w-full flex text-center text-white pointer-events-none">
+                <h1 class="flex space-x-8 justify-center pointer-events-auto w-full text-6xl font-bold drop-shadow-lg" >
+                    <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">J</span>
+                    <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">E</span>
+                    <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">R</span>
+                    <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">E</span>
+                    <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">M</span>
+                    <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">Y</span>
+                </h1> 
             </div>
-        </header>
         <div>
             <h3></h3>
             <img src="">
