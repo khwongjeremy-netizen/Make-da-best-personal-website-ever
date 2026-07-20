@@ -9,12 +9,13 @@
 
     </head>
     <body class="bg-[#08080a] text-slate-950 min-h-screen relative overflow-x-hidden select-none">
-        <header classs="group relative overflow-hidden bg-slate-900 py-32 px-10">
-            <!-- Background picture-->
-            <div class="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-[radial-gradient(600px_circle_at_var(--x, 50%)_var(--y, 50%),rgba(255,255,255,0.15),transparent_40%)]">
+        <header id ="interactive_header" class="relative flex h-[600px] w-full items-center justify-center overflow-hidden bg-red-500">
+            <div id="interactive_bg" 
+            class="absolute inset-0 z-0 scale-110 bg-cover bg-center transition-transform duration-100 ease-out" 
+            style = "background-image: url('./Images/home/hk.jpg');">
             </div>
-            <div class ="relative z-10 text-center">
-                <h1 class = "text-4xl font-bold text-white">JEREMY</h1>
+            <div class ="relative z-10 text-center text-white">
+                <h1 class = "text-4xl font-bold">JEREMY</h1>
 
                 <p class ="mt-4 text-slate-400"> PARAGRAPH</p>
             </div>
