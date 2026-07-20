@@ -80,3 +80,194 @@ Here is the simplified breakdown of the 4 main techniques they use and the exact
 
 **The TL;DR:** You don't have to code a graphics engine from scratch to get this look. You build your normal HTML layout, use **Spline** for the 3D background, **GSAP** for bouncy magnetic elements, and **Barba.js** to make the page changes cinematic.
 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTFD-8">
+        <meta name ="viewport" content = "width=device-width, initial-scale=1.0">
+
+        <title>Jeremy Wong</title>
+        <link rel="stylesheet" href = "dist.css">
+
+    </head>
+    <body class="bg-[#08080a] text-slate-950 min-h-screen relative overflow-x-hidden select-none">
+        <header classs="relative w-full h-screen flex flex-col md:flex-row items-center justify-center overflow-hidden z-10 px-6 gap-12 py-12">
+            <!-- Background picture-->
+            <div class="flex flex-col md: flex-row items-center gap-8 cursor-pointer group select-none" onclick="toggleHeader()">
+                <img src="./Images/home/hk.jpg">
+                <ul>
+                    <li>
+                        <h1>J</h1>
+                        <div>
+                            <h3>
+                                Intro
+                            </h3>
+                            <p>
+                                Hi, I'm Jeremy, an aspring engineer, posessing skills, in software development, visual editing & football(soccer). With a passion for helping others, creating combined with creativity and problem solving.
+                My motivations stem from a strong role model that thought alot like how I do now. My grandfather, an early inspiration fostered that core mindset and that I follow every day. He was a mechanic and an at-home inventor creating tools for our household that made life easier.
+                From shadowing his projects he passed down to me his tech for solving problems creatively and I traansitioned that into my current skills and profile, in tech, Visual effects, Entrepeneurship and Football.
+                            </p>
+                            <img src="">
+                        </div>
+                    </li>
+                    <li>
+                        <h1>E</h1>
+                        <div>
+                            <h3>
+                                Books
+                            </h3>
+                            <ul>
+                                <li>
+                                    Alex Rider
+                                </li>
+                                <li>
+                                    Apple In China
+                                </li>
+                                <li>
+                                    Guns Germs and Steel
+                                </li>
+                                <li>
+                                    Outliers
+                                </li>
+                                <li>
+                                    Refugee
+                                </li>
+                            </ul>
+                            <img src="">
+                        </div>
+                    </li>
+                    <li>
+                        <h1>R</h1>
+                        <div>
+                            <h3>
+                                Shows
+                            </h3>
+                            <ul>
+                                <li>
+                                    Blue Eyed Samurai
+                                </li>
+                                <li>
+                                    Breaking bad
+                                </li>
+                                <li>
+                                    Trollhunter
+                                </li>
+                                <li>
+                                    Unstable
+                                </li>
+                            </ul>
+                            <img src="">
+                        </div>
+                    </li>
+                    <li>
+                        <h1>E</h1>
+                        <div>
+                            <h3>
+                                Animes
+                            </h3>
+                            <ul>
+                                <li>
+                                    Bleach
+                                </li>
+                                <li>
+                                    Attack On Titan
+                                </li>
+                                <li>
+                                    Vinland Saga
+                                </li>
+                                <li>
+                                    Death Note
+                                </li>
+                                <li>
+                                    Chainsawman
+                                </li>
+                            </ul>
+                            <img src="">
+                        </div>
+                    </li>
+                    <li>
+                        <h1>M</h1>
+                        <div>
+                            <h3>Music</h3>
+                            <ul>
+                                <li>
+                                    Apple Cider by Beabadoobee
+                                </li>
+                                <li>
+                                    just a dream by yel
+                                </li>
+                                <li>
+                                    lost cause by Isabella Peng
+                                </li>
+                                <li>
+                                    Sweet Boy by Malcolm Todd
+                                </li>
+                                <li>
+                                    twenytyfour by overtonight
+                                </li>
+                            </ul>
+                            <img src="">
+                        </div>
+                    </li>
+                    <li>
+                        <h1>Y</h1>
+                        <div>
+                            <h3>
+                                Likes
+                            </h3>
+                            <ul>
+                                <li>
+                                    Coding
+                                </li>
+                                <li>
+                                    Football
+                                </li>
+                                <li>
+                                    Photography
+                                </li>
+                                <li>
+                                    Business
+                                </li>
+                                <li>
+                                    STEM
+                                </li>
+                            </ul>
+                            <img src="">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div>
+            <h3></h3>
+            <img src="">
+            <p></p>
+        </div>
+        <div>
+            <h3></h3>
+            <img src="">
+            <p></p>
+        </div>
+        <div>
+            <h3></h3>
+            <img src="">
+            <p></p>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+    </body>
+</html>
+
+<!--https://www.igloo.inc/ -->
+
+
+
+
+
+
+
+
+
+
+
+
