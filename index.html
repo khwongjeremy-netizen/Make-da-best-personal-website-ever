@@ -16,9 +16,9 @@
             </div>
             <div class="relative z-10 w-full flex text-center text-white">
                 <h1 class="flex space-x-8 justify-center pointer-events-auto w-full text-6xl font-bold drop-shadow-lg" >
-                    <span class="group relative hover:text-blue-400 transition-colors duration-500 cursor-pointer">
+                    <span onmouseenter="openDrop('intro')" onmouseleave="closeDrop('intro')" id = "intro-dropdown" class="group relative hover:text-blue-400 transition-colors duration-500 cursor-pointer">
                         J
-                        <div id="intro-content" class=" absolute top-12 left-0 w-80 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-mx" >
+                        <div id="intro-content" class=" absolute top-12 left-0 opacity-0 bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-xl" >
                             <h3 class="font-bold">
                                 Intro
                             </h3>
@@ -29,9 +29,9 @@
                             </p>
                         </div>
                     </span>
-                    <span class="group relative hover:text-blue-400 transition-colors duration-500 cursor-pointer">
+                    <span onmouseenter="openDrop('books')" onmouseleave="closeDrop('books')" id ="books-dropdown" class="  flex justify-center group relative hover:text-blue-400 transition-colors duration-500 cursor-pointer">
                         E
-                        <div id="books-content"  class=" absolute top-12 left-0 w-80 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-mx" >
+                        <div id="books-content"  class="absolute top-12 left-0 opacity-0 bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-xl" >
                             <h3>
                                 Books
                             </h3>
@@ -54,9 +54,9 @@
                             </ul>
                         </div>
                     </span>
-                    <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">
+                    <span  onmouseenter="openDrop('shows')" onmouseleave="closeDrop('shows')" id ="shows-dropdown"class="group relative hover:text-blue-400 transition-colors duration-500 cursor-pointer">
                         R
-                        <div id ="shows-content" class=" absolute top-12 left-0 w-80 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-mx" >
+                        <div id ="shows-content" class=" absolute top-12 left-0 opacity-0 bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-xl" >
                             <h3>
                                 Shows
                             </h3>
@@ -76,9 +76,9 @@
                             </ul>
                         </div>
                     </span>
-                    <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">
+                    <span onmouseenter="openDrop('anime')" onmouseleave="closeDrop('anime')" id = "anime-dropdown" class="group relative hover:text-blue-400 transition-colors duration-500 cursor-pointer">
                         E
-                        <div id = "anime-content" class=" absolute top-12 left-0 w-80 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-mx" >
+                        <div id = "anime-content" class=" absolute top-12 left-0 opacity-0 bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-xl" >
                             <h3>
                                 Animes
                             </h3>
@@ -103,9 +103,9 @@
                         
                     </span>
 
-                    <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">
+                    <span onmouseenter="openDrop('music')" onmouseleave="closeDrop('music')" id="music-dropdown" class="group relative hover:text-blue-400 transition-colors duration-500 cursor-pointer">
                         M
-                        <div id="music-content" class=" absolute top-12 left-0 w-80 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-mx" >
+                        <div id="music-content" class=" absolute top-12 left-0 opacity-0 bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-xl" >
                             <h3>Music</h3>
                             <ul>
                                 <li>
@@ -127,9 +127,9 @@
                         </div>
 
                     </span>
-                    <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">
+                    <span onmouseenter="openDrop('likes')" onmouseleave="closeDrop('likes')" id="likes-dropdown" class="group relative hover:text-blue-400 transition-colors duration-500 cursor-pointer">
                         Y
-                        <div id= "likes-content" class=" absolute top-12 left-0 w-80 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-mx" >
+                        <div id= "likes-content" class=" absolute top-12 opacity-0 bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-xl">
                             <h3>
                                 Likes
                             </h3>
