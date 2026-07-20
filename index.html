@@ -12,132 +12,124 @@
         <script type="module" src="http://unpkg.com/@splinetool/viewer@1.9.0/build/spline-viewer.js"></script>
         <header id ="interactive_header" class="relative flex h-[600px] w-full items-center justify-center overflow-hidden bg-black">
             <div class ="absolute inset-0 z-0">
-                <spline-viewer url = "https://my.spline.design/glasslogoanimationforwebsite-3NCblA3Ges2qt4jnZ3kQiGc8/scene.splinecode"></spline-viewer>
+                <spline-viewer  class="z-0" url = "https://my.spline.design/glasslogoanimationforwebsite-3NCblA3Ges2qt4jnZ3kQiGc8/scene.splinecode"></spline-viewer>
             </div>
-            <div class="relative z-10 w-full flex text-center text-white pointer-events-none">
+            <div class="relative z-10 w-full flex text-center text-white">
                 <h1 class="flex space-x-8 justify-center pointer-events-auto w-full text-6xl font-bold drop-shadow-lg" >
-                    <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">
-                        <div id="intro-dropdown" onmouseenter="openDrop('intro')" style =" height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;"  class="hover:text-blue-400 transition-colors duration-300">
-                            J
-                            <div id="intro-content" class=" overflow-hidden opacity-0 transition-opacity m-6 mt-4 border-blue-900 border-4 rounded-md p-4 bg-slate-950" onmouseleave = "closeDrop('intro')">
-                                <h3>
-                                    Intro
-                                </h3>
-                                <p>
-                                    Hi, I'm Jeremy, an aspring engineer, posessing skills, in software development, visual editing & football(soccer). With a passion for helping others, creating combined with creativity and problem solving.
-                    My motivations stem from a strong role model that thought alot like how I do now. My grandfather, an early inspiration fostered that core mindset and that I follow every day. He was a mechanic and an at-home inventor creating tools for our household that made life easier.
-                    From shadowing his projects he passed down to me his tech for solving problems creatively and I traansitioned that into my current skills and profile, in tech, Visual effects, Entrepeneurship and Football.
-                                </p>
-                            </div>
+                    <span class="group relative hover:text-blue-400 transition-colors duration-500 cursor-pointer">
+                        J
+                        <div id="intro-content" class=" absolute top-12 left-0 w-80 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-mx" >
+                            <h3 class="font-bold">
+                                Intro
+                            </h3>
+                            <p>
+                                Hi, I'm Jeremy, an aspring engineer, posessing skills, in software development, visual editing & football(soccer). With a passion for helping others, creating combined with creativity and problem solving.
+                My motivations stem from a strong role model that thought alot like how I do now. My grandfather, an early inspiration fostered that core mindset and that I follow every day. He was a mechanic and an at-home inventor creating tools for our household that made life easier.
+                From shadowing his projects he passed down to me his tech for solving problems creatively and I traansitioned that into my current skills and profile, in tech, Visual effects, Entrepeneurship and Football.
+                            </p>
+                        </div>
+                    </span>
+                    <span class="group relative hover:text-blue-400 transition-colors duration-500 cursor-pointer">
+                        E
+                        <div id="books-content"  class=" absolute top-12 left-0 w-80 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-mx" >
+                            <h3>
+                                Books
+                            </h3>
+                            <ul class="font-bold">
+                                <li>
+                                    Alex Rider
+                                </li>
+                                <li>
+                                    Apple In China
+                                </li>
+                                <li>
+                                    Guns Germs and Steel
+                                </li>
+                                <li>
+                                    Outliers
+                                </li>
+                                <li>
+                                    Refugee
+                                </li>
+                            </ul>
                         </div>
                     </span>
                     <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">
-                        <div id = "books-dropdown" onmouseenter="openDrop('intro')" style = "height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;" >
-                            E
-                            <div id="books-content"  class="opacity-0 overflow-hidden trasnition-opacity m-6 mt-4 border-blue -900 border-4 rounded p-4c bg-slate-950" onmouseleave = "closeDrop('intro')">
-                                <h3>
-                                    Books
-                                </h3>
-                                <ul>
-                                    <li>
-                                        Alex Rider
-                                    </li>
-                                    <li>
-                                        Apple In China
-                                    </li>
-                                    <li>
-                                        Guns Germs and Steel
-                                    </li>
-                                    <li>
-                                        Outliers
-                                    </li>
-                                    <li>
-                                        Refugee
-                                    </li>
-                                </ul>
-                            </div>
+                        R
+                        <div id ="shows-content" class=" absolute top-12 left-0 w-80 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-mx" >
+                            <h3>
+                                Shows
+                            </h3>
+                            <ul>
+                                <li>
+                                    Blue Eyed Samurai
+                                </li>
+                                <li>
+                                    Breaking bad
+                                </li>
+                                <li>
+                                    Trollhunter
+                                </li>
+                                <li>
+                                    Unstable
+                                </li>
+                            </ul>
                         </div>
                     </span>
                     <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">
-                        <div id="shows-dropdown" onmouseenter="openDrop('intro')" style = "height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;">R
-                            <div id ="shows-content">
-                                <h3>
-                                    Shows
-                                </h3>
-                                <ul>
-                                    <li>
-                                        Blue Eyed Samurai
-                                    </li>
-                                    <li>
-                                        Breaking bad
-                                    </li>
-                                    <li>
-                                        Trollhunter
-                                    </li>
-                                    <li>
-                                        Unstable
-                                    </li>
-                                </ul>
-                            </div>
+                        E
+                        <div id = "anime-content" class=" absolute top-12 left-0 w-80 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-mx" >
+                            <h3>
+                                Animes
+                            </h3>
+                            <ul>
+                                <li>
+                                    Bleach
+                                </li>
+                                <li>
+                                    Attack On Titan
+                                </li>
+                                <li>
+                                    Vinland Saga
+                                </li>
+                                <li>
+                                    Death Note
+                                </li>
+                                <li>
+                                    Chainsawman
+                                </li>
+                            </ul>
                         </div>
-                    </span>
-                    <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">
-                        <div id="anime-dropdown" onmouseenter="openDrop('intro')" style = "height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;">
-                            E
-                            <div id = "anime-content">
-                                <h3>
-                                    Animes
-                                </h3>
-                                <ul>
-                                    <li>
-                                        Bleach
-                                    </li>
-                                    <li>
-                                        Attack On Titan
-                                    </li>
-                                    <li>
-                                        Vinland Saga
-                                    </li>
-                                    <li>
-                                        Death Note
-                                    </li>
-                                    <li>
-                                        Chainsawman
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+                        
                     </span>
 
                     <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">
-                        <div id= "music-dropdown" onmouseenter="openDrop('intro')" style = "height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;">
-                            M
-                            <div id="music-content">
-                                <h3>Music</h3>
-                                <ul>
-                                    <li>
-                                        Apple Cider by Beabadoobee
-                                    </li>
-                                    <li>
-                                        just a dream by yel
-                                    </li>
-                                    <li>
-                                        lost cause by Isabella Peng
-                                    </li>
-                                    <li>
-                                        Sweet Boy by Malcolm Todd
-                                    </li>
-                                    <li>
-                                        twenytyfour by overtonight
-                                    </li>
-                                </ul>
-                            </div>
+                        M
+                        <div id="music-content" class=" absolute top-12 left-0 w-80 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-mx" >
+                            <h3>Music</h3>
+                            <ul>
+                                <li>
+                                    Apple Cider by Beabadoobee
+                                </li>
+                                <li>
+                                    just a dream by yel
+                                </li>
+                                <li>
+                                    lost cause by Isabella Peng
+                                </li>
+                                <li>
+                                    Sweet Boy by Malcolm Todd
+                                </li>
+                                <li>
+                                    twenytyfour by overtonight
+                                </li>
+                            </ul>
                         </div>
+
                     </span>
                     <span class=" inline-block hover:scale-110 ease-in-out transition-transform duration-300 cursor-pointer">
-                        <div id="likes-dropdown" onmouseenter="openDrop('intro')" style = "height: 0px; overflow: hidden; transition: height 0.5s ease-in-out;">
-                            Y
-                        <div id= "likes-content" class="hidden">
+                        Y
+                        <div id= "likes-content" class=" absolute top-12 left-0 w-80 opacity-0 group-hover:opacity-100 transition-opacity bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-mx" >
                             <h3>
                                 Likes
                             </h3>
@@ -158,7 +150,6 @@
                                     STEM
                                 </li>
                             </ul>
-                            </div>
                         </div>
                     </span>
                 </h1> 
