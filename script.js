@@ -84,23 +84,32 @@ function openDrop(category) {
     const inner = document.getElementById('dropdown-inner-content');
 
     inner.innerHTML = contentData[category] || "";
+    
+    // Kill any active transitions running right now
+    gsap.killTweensOf(master);
+    
     gsap.to(master, {
         height: 'auto',
         opacity: 1,
-        duration: 0.5,
+        duration: 0.4,
         ease: "power2.out"
     });
 }
-function closeDrop(category) {
-    const master = document.getElementById('general-dropdown');
-    const inner = document.getElementById('dropdown-inner-content');
 
-    inner.innerHTML = contentData[category] || "";
+// FIX: Removed category requirement so it closes immediately on mouse leave
+function closeDrop() {
+    const master = document.getElementById('general-dropdown');
+    
+    gsap.killTweensOf(master);
+    
     gsap.to(master, {
         height: 0,
         opacity: 0,
-        duration: 0.5,
-        ease: "power2.in"
+        duration: 0.3,
+        ease: "power2.in",
+        onComplete: () => {
+            document.getElementById('dropdown-inner-content').innerHTML = "";
+        }
     });
 }
 let imageTimeout;
