@@ -259,14 +259,17 @@
   .h-96 {
     height: calc(var(--spacing) * 96);
   }
+  .h-\[400px\] {
+    height: 400px;
+  }
   .h-\[600px\] {
     height: 600px;
   }
-  .h-\[700px\] {
-    height: 700px;
-  }
   .h-\[900px\] {
     height: 900px;
+  }
+  .h-\[1000p\] {
+    height: 1000p;
   }
   .h-full {
     height: 100%;
@@ -280,11 +283,11 @@
   .w-96 {
     width: calc(var(--spacing) * 96);
   }
+  .w-\[500px\] {
+    width: 500px;
+  }
   .w-\[700px\] {
     width: 700px;
-  }
-  .w-\[800px\] {
-    width: 800px;
   }
   .w-full {
     width: 100%;
