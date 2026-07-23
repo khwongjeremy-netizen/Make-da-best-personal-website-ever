@@ -14,30 +14,29 @@
             <div class ="absolute inset-0 z-0">
                 <spline-viewer  class="z-0" url = "https://my.spline.design/glasslogoanimationforwebsite-3NCblA3Ges2qt4jnZ3kQiGc8/scene.splinecode"></spline-viewer>
             </div>
-            <div class="relative z-10 w-full flex text-center text-white">
+            <div class="relative z-10 w-full flex flex-col items-center justify-center text-center text-white">
                 <h1 class="flex space-x-8 justify-center pointer-events-auto w-full text-6xl font-bold drop-shadow-lg" >
-                    <span onmouseenter="openDrop('intro')" onmouseleave="closeDrop('intro')" id = "intro-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
+                    <span onmouseenter="openDrop('intro')" id = "intro-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
                         J
                     </span>
-                    <span onmouseenter="openDrop('books')" onmouseleave="closeDrop('books')" id ="books-dropdown" class=" group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
+                    <span onmouseenter="openDrop('books')" id ="books-dropdown" class=" group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
                         E
                     </span>
-                    <span  onmouseenter="openDrop('shows')" onmouseleave="closeDrop('shows')" id ="shows-dropdown"class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
+                    <span  onmouseenter="openDrop('shows')" id ="shows-dropdown"class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
                         R
                     </span>
-                    <span onmouseenter="openDrop('anime')" onmouseleave="closeDrop('anime')" id = "anime-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
+                    <span onmouseenter="openDrop('anime')" id = "anime-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
                         E
                     </span>
-                    <span onmouseenter="openDrop('music')" onmouseleave="closeDrop('music')" id="music-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
+                    <span onmouseenter="openDrop('music')" id="music-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
                         M
                     </span>
-                    <span onmouseenter="openDrop('likes')" onmouseleave="closeDrop('likes')" id="likes-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
+                    <span onmouseenter="openDrop('likes')" id="likes-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
                         Y
                     </span>
                 </h1>
                 
-                <div id="general-dropdown" class=" mt-8 top-full left-1/2 -translate-x-1/2 top-[400px] w-96 opacity-0 h-0 overflow-hidden
-                transition-all duration-500 bg-slate-950 border-4 border-blue-900 rounded-md p-0 text-white text-xl z-50">
+                <div onmouseleave="closeDrop()" id="general-dropdown" class=" mt-8 w-96 opacity-0 h-0 overflow-hidden transition-all duration-500 bg-slate-950 border-4 border-blue-900 rounded-md p-0 text-white text-xl z-50">
                     <div id="dropdown-inner-content" class = "p-6">
 
                     </div>
