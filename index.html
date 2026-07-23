@@ -17,28 +17,28 @@
                 </div>
                 <div class="relative z-10 w-full flex flex-col items-center justify-center text-center text-white">
                     <h1 class="flex space-x-8 justify-center pointer-events-auto w-full text-6xl font-bold drop-shadow-lg" >
-                        <span onmouseenter="openDrop('intro')" id = "intro-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
+                        <span onmouseenter="openDrop('intro', 'general')" id = "intro-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
                             J
                         </span>
-                        <span onmouseenter="openDrop('books')" id ="books-dropdown" class=" group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
+                        <span onmouseenter="openDrop('books', 'general')" id ="books-dropdown" class=" group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
                             E
                         </span>
-                        <span  onmouseenter="openDrop('shows')" id ="shows-dropdown"class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
+                        <span  onmouseenter="openDrop('shows', 'general')" id ="shows-dropdown"class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
                             R
                         </span>
-                        <span onmouseenter="openDrop('anime')" id = "anime-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
+                        <span onmouseenter="openDrop('anime' , 'general')" id = "anime-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
                             E
                         </span>
-                        <span onmouseenter="openDrop('music')" id="music-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
+                        <span onmouseenter="openDrop('music', 'general')" id="music-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
                             M
                         </span>
-                        <span onmouseenter="openDrop('likes')" id="likes-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
+                        <span onmouseenter="openDrop('likes', 'general')" id="likes-dropdown" class="group relative hover:text-blue-400 transition-all duration-500 cursor-pointer">
                             Y
                         </span>
                     </h1>
                     
-                    <div onmouseleave="closeDrop()" id="general-dropdown" class=" mt-8 w-96 opacity-0 h-0 overflow-hidden transition-all duration-500 bg-slate-950 border-4 border-blue-900 rounded-md p-0 text-white text-xl z-50">
-                        <div id="dropdown-inner-content" class = "p-6">
+                    <div onmouseleave="closeDrop('general')" id="general-dropdown" class=" mt-8 w-96 opacity-0 h-0 overflow-hidden transition-all duration-500 bg-slate-950 border-4 border-blue-900 rounded-md p-0 text-white text-xl z-50">
+                        <div id="general-inner-content" class = "p-6">
 
                         </div>
                     </div>
@@ -52,8 +52,12 @@
             </div>
             <div class="mt-24 mb-24 w-[700px] h-[1000p] opacity-0 load-in">
                 <h3></h3>
-                <img src="Images/Fits/fit3.5.jpeg" class="w-full h-full">
-                <p class="mt-8 text-xl font-semibold text-slate-900">That one time I went to alexander wang and tried out thier peices just to take photos. I didn't buy. a single item cuz it was 100+ dollars WHAT DA FLIP! In this economy???!! Lowk taxxed their style and photos tho so that's a plus. GUYS DO I HAVE TASTE??!! </p>
+                <img src="Images/Fits/fit3.5.jpeg" onmouseenter ="openDrop('story', 'link-fits')" class="w-full h-full">
+                <div onmouseleave="closeDrop('link-fits')" id="link-fits-dropdown" class="mt-8 w-96 opacity-0 h-0 overflow-hidden transition-all duration-500 bg-slate-950 border-4 border-blue-900 rounded-md p-4 text-white text-xl z-50">
+                    <div id="link-fits-inner-content">
+                    </div>
+                </div>
+                <p class="text-xl font-semibold text-slate-900">That one time I went to alexander wang and tried out thier peices just to take photos. I didn't buy. a single item cuz it was 100+ dollars WHAT DA FLIP! In this economy???!! Lowk taxxed their style and photos tho so that's a plus. GUYS DO I HAVE TASTE??!! </p>
             </div>
             <div class="mt-24 mb-24 w-[700px] h-[500px] opacity-0 load-in">
                 <h3></h3>

@@ -6,11 +6,11 @@ const contentData = {
     anime: `<h3>Animes</h3><ul><li>Bleach</li><li>Attack On Titan</li><li>Vinland Saga</li><li>Death Note</li><li>Chainsawman</li></ul>`,
     music: `<h3>Music</h3><ul><li>Apple Cider by Beabadoobee</li><li>just a dream by yel</li><li>lost cause by Isabella Peng</li><li>Sweet Boy by Malcolm Todd</li><li>twenytyfour by overtonight</li></ul>`,
     likes: `<h3>Likes</h3><ul><li>Coding</li><li>Football</li><li>Photography</li><li>Business</li><li>STEM</li></ul>`,
-
+    story: `<a href="story.html">story</a>`
 }
-function openDrop(category) {
-    const master = document.getElementById('general-dropdown');
-    const inner = document.getElementById('dropdown-inner-content');
+function openDrop(category, type) {
+    const master = document.getElementById(`${type}-dropdown`);
+    const inner = document.getElementById(`${type}-inner-content`);
 
     inner.innerHTML = contentData[category] || "";
     
@@ -26,8 +26,8 @@ function openDrop(category) {
 }
 
 // FIX: Removed category requirement so it closes immediately on mouse leave
-function closeDrop() {
-    const master = document.getElementById('general-dropdown');
+function closeDrop(category) {
+    const master = document.getElementById(`${category}-dropdown`);
     
     gsap.killTweensOf(master);
     
@@ -37,7 +37,7 @@ function closeDrop() {
         duration: 0.3,
         ease: "power2.in",
         onComplete: () => {
-            document.getElementById('dropdown-inner-content').innerHTML = "";
+            document.getElementById(`${category}-inner-content`).innerHTML = "";
         }
     });
 }
