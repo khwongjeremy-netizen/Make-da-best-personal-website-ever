@@ -4,44 +4,8 @@ const contentData = {
     books: "<h3>Books</h3><ul><li>Alex Rider</li><li>Apple In China</li><li>Guns Germs and Steel</li><li>Outliers</li><li>Refugee</li></ul>",
     shows: `<h3>Shows</h3><ul><li>Blue Eyed Samurai</li><li>Breaking bad</li><li>Trollhunter</li><li>Unstable</li></ul>`,
     anime: `<h3>Animes</h3><ul><li>Bleach</li><li>Attack On Titan</li><li>Vinland Saga</li><li>Death Note</li><li>Chainsawman</li></ul>`,
-    music: `<h3>Music</h3>
-                            <ul>
-                                <li>
-                                    Apple Cider by Beabadoobee
-                                </li>
-                                <li>
-                                    just a dream by yel
-                                </li>
-                                <li>
-                                    lost cause by Isabella Peng
-                                </li>
-                                <li>
-                                    Sweet Boy by Malcolm Todd
-                                </li>
-                                <li>
-                                    twenytyfour by overtonight
-                                </li>
-                            </ul>`,
-    likes: `<h3>
-                                Likes
-                            </h3>
-                            <ul>
-                                <li>
-                                    Coding
-                                </li>
-                                <li>
-                                    Football
-                                </li>
-                                <li>
-                                    Photography
-                                </li>
-                                <li>
-                                    Business
-                                </li>
-                                <li>
-                                    STEM
-                                </li>
-                            </ul>`,
+    music: `<h3>Music</h3><ul><li>Apple Cider by Beabadoobee</li><li>just a dream by yel</li><li>lost cause by Isabella Peng</li><li>Sweet Boy by Malcolm Todd</li><li>twenytyfour by overtonight</li></ul>`,
+    likes: `<h3>Likes</h3><ul><li>Coding</li><li>Football</li><li>Photography</li><li>Business</li><li>STEM</li></ul>`,
 
 }
 function openDrop(category) {
@@ -96,3 +60,18 @@ function changeImage(image, item) {
         }, 200);
     }
 }
+window.addEventListener('DOMContentLoaded', () => {
+    gsap.fromTo(".load-in", 
+        {
+            opacity: 0,
+            y:40
+        },
+        {
+            opacity: 1,
+            y: 0,
+            duration: 0.8, 
+            ease: "power3.out",
+            stagger: 0.2
+        }
+    );
+});
