@@ -260,9 +260,6 @@
   .mt-24 {
     margin-top: calc(var(--spacing) * 24);
   }
-  .mt-96 {
-    margin-top: calc(var(--spacing) * 96);
-  }
   .mb-24 {
     margin-bottom: calc(var(--spacing) * 24);
   }
@@ -418,12 +415,6 @@
   .bg-slate-100 {
     background-color: var(--color-slate-100);
   }
-  .bg-slate-200 {
-    background-color: var(--color-slate-200);
-  }
-  .bg-slate-300 {
-    background-color: var(--color-slate-300);
-  }
   .bg-slate-950 {
     background-color: var(--color-slate-950);
   }
@@ -481,9 +472,6 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
-  }
-  .text-blue-400 {
-    color: var(--color-blue-400);
   }
   .text-slate-100 {
     color: var(--color-slate-100);
