@@ -65,23 +65,46 @@ gsap.registerPlugin(ScrollTrigger);
 window.addEventListener('DOMContentLoaded', () => {
     const boxes = document.querySelectorAll('.load-in');
 
-    boxes.forEach((box) => {gsap.fromTo(box, 
-        {
-            opacity: 0, 
-            y: 50,
+    boxes.forEach((box) => {
+        gsap.fromTo(box,
+            {
+                opacity: 0,
+                y: 50
 
-        },
-        {
-            opacity: 1, 
-            y: 0, 
-            duration: 0.8, 
-            ease: "power2.out",
-            scrollTrigger: {
-                trigger: box,
-                start: "top 85%",
-                toggleActions: "play none none none"
+            },
+            {
+                opacity: 1, 
+                y: 0,
+                duraiton: 0.8,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: box, 
+                    start: "top 85$",
+                    toggleActions: "play none none none"
+                },
+                onComplete: () => {
+                    initHoverEffects(box);
+                } 
             }
-        }
-    );
-});
-});
+        )
+    })
+})
+
+function initHoverEffects(card) {
+    card.addEventListener("mousenter", () => {
+        gsap.to(card, {
+            scale:1.05, 
+            duration: 0.3, 
+            ease: "power1.out",
+            overwrite: "auto"
+        });
+    });
+    card.addEventListener("mouseleave", () => {
+        gsap.to(card, {
+            scale: 1, 
+            duration: 0.3, 
+            ease: "power1.out",
+            overwrite: "auto"
+        });
+    });
+}
