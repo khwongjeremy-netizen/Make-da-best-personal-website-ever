@@ -413,6 +413,9 @@
   .bg-slate-100 {
     background-color: var(--color-slate-100);
   }
+  .bg-slate-900 {
+    background-color: var(--color-slate-900);
+  }
   .bg-slate-950 {
     background-color: var(--color-slate-950);
   }
@@ -436,6 +439,18 @@
   }
   .py-12 {
     padding-block: calc(var(--spacing) * 12);
+  }
+  .py-48 {
+    padding-block: calc(var(--spacing) * 48);
+  }
+  .py-64 {
+    padding-block: calc(var(--spacing) * 64);
+  }
+  .py-72 {
+    padding-block: calc(var(--spacing) * 72);
+  }
+  .py-96 {
+    padding-block: calc(var(--spacing) * 96);
   }
   .pb-24 {
     padding-bottom: calc(var(--spacing) * 24);
