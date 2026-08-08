@@ -137,3 +137,60 @@ function initHoverEffects(card) {
     }
     });
 }
+const track = document.getElementById("overall-projects");
+const cards= gsap.utils.toArray("project.card");
+
+//Gets teh scroll distance needed???
+function getScrollAmount() {
+ return -(track.scrollWidth - window. innerWidth  +  100);
+
+}
+const horizontalTween = gspa.to(tracl , {
+    x: getScrollAmount,
+    ease: "none", 
+    scrollTrigger: {
+        trigger: track.parentElement,
+        start: "center center",
+        end: () => `+=${track.scrollWidth}`,
+        pin: true,
+        scruh: 0.8,
+        invalidateOnRefresh: true,
+
+    }
+});
+cards.forEach((card) => {
+    gsap.fromTo(
+        card,
+        {
+            rotateY: -35,
+            rotateZ: -12,
+            y: 40,
+            scale: 0.85,
+            opacity: 0.5
+        },
+        {
+            rotateY: 35,
+            rotateZ: 12,
+            y: 40,
+            scale: 0.85,
+            opacity: 0.5,
+            ease: "none",
+            scrollTrigger: {
+                trigger: card,
+                containerAnimation: horizontalTween,
+                start: "left right",
+                end: "right right",
+                scrub: true, 
+                onUpdate: (self) => {
+                    const progress = self.progress;
+                    const centerFactor = 1 - Math.abs(progress - 0.5) * 2;
+                    gsap.set(card, {
+                        scale: 0.85 + centerFactor * 0.25,
+                        opacity: 0.4 + centerFactor * 0.6,
+                        y: (1 - centerFactor) * 50
+                    });
+                }
+            }
+        }
+    );
+});
