@@ -264,6 +264,9 @@
   .mb-54 {
     margin-bottom: calc(var(--spacing) * 54);
   }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
@@ -442,15 +445,6 @@
   }
   .py-48 {
     padding-block: calc(var(--spacing) * 48);
-  }
-  .py-64 {
-    padding-block: calc(var(--spacing) * 64);
-  }
-  .py-72 {
-    padding-block: calc(var(--spacing) * 72);
-  }
-  .py-96 {
-    padding-block: calc(var(--spacing) * 96);
   }
   .pb-24 {
     padding-bottom: calc(var(--spacing) * 24);
