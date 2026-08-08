@@ -225,9 +225,6 @@
   .z-50 {
     z-index: 50;
   }
-  .m-0 {
-    margin: 0;
-  }
   .m-6 {
     margin: calc(var(--spacing) * 6);
   }
@@ -263,9 +260,6 @@
   }
   .mb-54 {
     margin-bottom: calc(var(--spacing) * 54);
-  }
-  .block {
-    display: block;
   }
   .flex {
     display: flex;
