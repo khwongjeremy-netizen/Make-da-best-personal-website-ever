@@ -138,14 +138,19 @@ function initHoverEffects(card) {
     });
 }
 const track = document.getElementById("overall-projects");
-const cards= gsap.utils.toArray("project.card");
+const cards= gsap.utils.toArray(".project-card");
 
 //Gets teh scroll distance needed???
 function getScrollAmount() {
- return -(track.scrollWidth - window. innerWidth  +  100);
+ return -(track.scrollWidth - window.innerWidth  +  80);
 
 }
-const horizontalTween = gspa.to(tracl , {
+gsap.set(cards, {
+    transformPerespective: 1000,
+    transformOrigin: "50% 50% -350px",
+    backfaceVisibility: "hidden"
+});
+const horizontalTween = gsap.to(track, {
     x: getScrollAmount,
     ease: "none", 
     scrollTrigger: {
@@ -153,7 +158,7 @@ const horizontalTween = gspa.to(tracl , {
         start: "center center",
         end: () => `+=${track.scrollWidth}`,
         pin: true,
-        scruh: 0.8,
+        scrub: 1,
         invalidateOnRefresh: true,
 
     }
@@ -162,32 +167,30 @@ cards.forEach((card) => {
     gsap.fromTo(
         card,
         {
-            rotateY: -35,
-            rotateZ: -12,
-            y: 40,
-            scale: 0.85,
-            opacity: 0.5
+            rotateY: -45,
+            rotateZ: -8,
+            opacity: 0.3,
+            scale: 0.8
         },
         {
-            rotateY: 35,
-            rotateZ: 12,
-            y: 40,
-            scale: 0.85,
-            opacity: 0.5,
-            ease: "none",
+            rotateY: 45,
+            rotateZ: 8,
+            opacity: 0.3,
+            scale: 0.8,
+            ease: "sine.inOut",
             scrollTrigger: {
                 trigger: card,
                 containerAnimation: horizontalTween,
-                start: "left right",
-                end: "right right",
+                start: "left 100%",
+                end: "right 0%",
                 scrub: true, 
                 onUpdate: (self) => {
                     const progress = self.progress;
-                    const centerFactor = 1 - Math.abs(progress - 0.5) * 2;
+                    const centerFactor = 1 - Math.abs(progress * Math.PI);
                     gsap.set(card, {
-                        scale: 0.85 + centerFactor * 0.25,
-                        opacity: 0.4 + centerFactor * 0.6,
-                        y: (1 - centerFactor) * 50
+                        scale: 0.82 + centerFactor * 0.28,
+                        opacity: 0.3 + centerFactor * 0.7,
+                        z: centerFactor * 120
                     });
                 }
             }
