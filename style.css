@@ -1,1 +1,2 @@
 @import "tailwindcss";
+@plugin "@rombo/tailwind";
