@@ -137,63 +137,15 @@ function initHoverEffects(card) {
     }
     });
 }
-const track = document.getElementById("overall-projects");
-const cards= gsap.utils.toArray(".project-card");
+function init3DDIAL() {
+    const cards = gsap.utils.toArray(".dial-card");
+    const container = document.getElementById('overall-projects');
 
-//Gets teh scroll distance needed???
-function getScrollAmount() {
- return -(track.scrollWidth - window.innerWidth  +  80);
-
-}
-gsap.set(cards, {
-    transformPerespective: 1000,
-    transformOrigin: "50% 50% -350px",
-    backfaceVisibility: "hidden"
-});
-const horizontalTween = gsap.to(track, {
-    x: getScrollAmount,
-    ease: "none", 
-    scrollTrigger: {
-        trigger: track.parentElement,
-        start: "center center",
-        end: () => `+=${track.scrollWidth}`,
-        pin: true,
-        scrub: 1,
-        invalidateOnRefresh: true,
-
-    }
-});
-cards.forEach((card) => {
-    gsap.fromTo(
-        card,
-        {
+    if (!container || cards.length === 0) return;
+    cards.forEach((card) => {
+        gsap.fromTo(card,{
             rotateY: -45,
-            rotateZ: -8,
-            opacity: 0.3,
-            scale: 0.8
-        },
-        {
-            rotateY: 45,
-            rotateZ: 8,
-            opacity: 0.3,
-            scale: 0.8,
-            ease: "sine.inOut",
-            scrollTrigger: {
-                trigger: card,
-                containerAnimation: horizontalTween,
-                start: "left 100%",
-                end: "right 0%",
-                scrub: true, 
-                onUpdate: (self) => {
-                    const progress = self.progress;
-                    const centerFactor = 1 - Math.abs(progress * Math.PI);
-                    gsap.set(card, {
-                        scale: 0.82 + centerFactor * 0.28,
-                        opacity: 0.3 + centerFactor * 0.7,
-                        z: centerFactor * 120
-                    });
-                }
-            }
-        }
-    );
-});
+            z: -150,
+            scale: 0.85,
+            opacity: 0.4,
+  
