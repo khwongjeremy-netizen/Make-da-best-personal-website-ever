@@ -614,6 +614,9 @@
   .\[persepctive\:1000px\] {
     persepctive: 1000px;
   }
+  .\[perspective\:1000px\] {
+    perspective: 1000px;
+  }
   .hover\:scale-105 {
     &:hover {
       @media (hover: hover) {
