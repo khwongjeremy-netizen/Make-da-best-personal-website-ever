@@ -1,4 +1,6 @@
 
+//Home page functions >>>>>>>>>>>>>>>>....
+
 const contentData = {
     intro: "<h3>Intro</h3><p>Hi, I'm Jeremy, an aspring engineer, posessing skills, in software development, visual editing & football(soccer). With a passion for helping others, creating combined with creativity and problem solving. My motivations stem from a strong role model that thought alot like how I do now. My grandfather, an early inspiration fostered that core mindset and that I follow every day. He was a mechanic and an at-home inventor creating tools for our household that made life easier. From shadowing his projects he passed down to me his tech for solving problems creatively and I traansitioned that into my current skills and profile, in tech, Visual effects, Entrepeneurship and Football. </p>",
     books: "<h3>Books</h3><ul><li>Alex Rider</li><li>Apple In China</li><li>Guns Germs and Steel</li><li>Outliers</li><li>Refugee</li></ul>",
@@ -14,7 +16,6 @@ function openDrop(category, type) {
 
     inner.innerHTML = contentData[category] || "";
     
-    // Kill any active transitions running right now
     gsap.killTweensOf(master);
     
     gsap.to(master, {
@@ -25,7 +26,6 @@ function openDrop(category, type) {
     });
 }
 
-// FIX: Removed category requirement so it closes immediately on mouse leave
 function closeDrop(category) {
     const master = document.getElementById(`${category}-dropdown`);
     
@@ -60,6 +60,11 @@ function changeImage(image, item) {
         }, 200);
     }
 }
+
+
+// Story Page >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -137,15 +142,3 @@ function initHoverEffects(card) {
     }
     });
 }
-function init3DDIAL() {
-    const cards = gsap.utils.toArray(".dial-card");
-    const container = document.getElementById('overall-projects');
-
-    if (!container || cards.length === 0) return;
-    cards.forEach((card) => {
-        gsap.fromTo(card,{
-            rotateY: -45,
-            z: -150,
-            scale: 0.85,
-            opacity: 0.4,
-  
