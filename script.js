@@ -1,5 +1,5 @@
 
-//Home page functions >>>>>>>>>>>>>>>>....
+//Home page functions >>>>>>>>>>>>>>>>
 
 const contentData = {
     intro: "<h3>Intro</h3><p>Hi, I'm Jeremy, an aspring engineer, posessing skills, in software development, visual editing & football(soccer). With a passion for helping others, creating combined with creativity and problem solving. My motivations stem from a strong role model that thought alot like how I do now. My grandfather, an early inspiration fostered that core mindset and that I follow every day. He was a mechanic and an at-home inventor creating tools for our household that made life easier. From shadowing his projects he passed down to me his tech for solving problems creatively and I traansitioned that into my current skills and profile, in tech, Visual effects, Entrepeneurship and Football. </p>",
@@ -142,3 +142,4 @@ function initHoverEffects(card) {
     }
     });
 }
+//Projects page functions >>>>>>>>>>>>>>>>>>>>
