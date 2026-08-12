@@ -143,3 +143,20 @@ function initHoverEffects(card) {
     });
 }
 //Projects page functions >>>>>>>>>>>>>>>>>>>>
+gsap.registerPlugin(ScrollTrigger);
+
+const container = document.querySelector("#project-list");
+
+gsap.to(container, {
+    x: () => -(container.scrollWidth - window.innerWidth + 80),
+    ease: "none",
+    scrollTrigger: {
+        trigger: "#portfolio-section",
+        start: "top top",
+        end: () => `+=${container.scrollWidth}`,
+        scrub: 1,
+        pin: true,
+        anticipatePin: 1,
+        invalidateOnRefresh: true,
+    }
+});
