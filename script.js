@@ -45,6 +45,7 @@ let imageTimeout;
 
 function changeImage(image, item) {
     const preview = document.getElementById(`${image}-preview`);
+    
 
     if (preview) {
 
@@ -131,8 +132,8 @@ function initHoverEffects(card) {
         if (titleText && paragraphText) {
         gsap.to(titleText, {
             color: "#f1f5f9",
-            duraiton:0.3,
-            overtwrite: "auto"
+            duration:0.3,
+            overwrite: "auto"
         });
         gsap.to(paragraphText, {
             color: "#f1f5f9",
@@ -143,7 +144,6 @@ function initHoverEffects(card) {
     });
 }
 //Projects page functions >>>>>>>>>>>>>>>>>>>>
-gsap.registerPlugin(ScrollTrigger);
 
 const container = document.querySelector("#project-list");
 
