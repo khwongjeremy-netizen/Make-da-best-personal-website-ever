@@ -160,3 +160,5 @@ gsap.to(container, {
         invalidateOnRefresh: true,
     }
 });
+
+// Contacts page functions>>>>>>>>>>>>>>>>>>>
