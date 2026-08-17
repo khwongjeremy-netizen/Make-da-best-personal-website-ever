@@ -58,3 +58,32 @@ function changeImage(image, item) {
         }, 200);
     }
 }
+gsap.registerPlugin(ScrollTrigger);
+
+window.addEventListener('DOMContentLoaded', () => {
+    const boxes = document.querySelectorAll('.load-in');
+
+    boxes.forEach((box) => {
+        gsap.fromTo(box,
+            {
+                opacity: 0,
+                y: 50
+
+            },
+            {
+                opacity: 1, 
+                y: 0,
+                duration: 0.8,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: box, 
+                    start: "top 85%",
+                    toggleActions: "play none none none"
+                },
+                onComplete: () => {
+                    initHoverEffects(box);
+                } 
+            }
+        )
+    })
+})

@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
             {
                 opacity: 1, 
                 y: 0,
-                duraiton: 0.8,
+                duration: 0.8,
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: box, 
@@ -43,8 +43,8 @@ function initHoverEffects(card) {
     if (titleText && paragraphText) {
         gsap.to(titleText, {
             color: "#60a5fa",
-            duraiton:0.3,
-            overtwrite: "auto"
+            duration:0.3,
+            overwrite: "auto"
         });
         gsap.to(paragraphText, {
             color: "#60a5fa",
