@@ -340,6 +340,9 @@
   .snap-start {
     scroll-snap-align: start;
   }
+  .list-inside {
+    list-style-position: inside;
+  }
   .flex-col {
     flex-direction: column;
   }
@@ -493,6 +496,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-left {
+    text-align: left;
   }
   .text-4xl {
     font-size: var(--text-4xl);
