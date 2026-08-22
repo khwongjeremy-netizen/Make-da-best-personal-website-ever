@@ -2,10 +2,10 @@ const contentData = {
     intro: `<h3 class='font-bold justify-center'>Navigate</h3>
                 <div id="line-navigate" class ="mt-4 w-full border-t border-0 justify-center transform border-blue-900 z-0"></div>
                 <ul class='mt-4 flex flex-col list-disc list-inside text-left'>
-                    <li>
+                    <li class='hover:text-purple-400 hover:scale-105 transittion-all ease-in-out duration-500 no-underline hover:underline'>
                         <a href='story.html'>Story</a>
                     </li>
-                    <li>
+                    <li >
                         <a href='projects.html'>Projects</a>
                     </li>
                     <li>
