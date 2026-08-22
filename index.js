@@ -1,60 +1,60 @@
 const contentData = {
-    intro: `<h3 class='font-bold justify-center'>Navigate</h3>
+    intro: `<h3 class='font-bold text-4xl hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline hover:text-purple-400 justify-center'>Navigate</h3>
                 <div id="line-navigate" class ="mt-4 w-full border-t border-0 justify-center transform border-blue-900 z-0"></div>
                 <ul class='mt-4 flex flex-col list-disc list-inside text-left'>
-                    <li class='hover:text-purple-400 hover:scale-105 transittion-all ease-in-out duration-500 no-underline hover:underline'>
+                    <li class='hover:text-purple-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'>
                         <a href='story.html'>Story</a>
                     </li>
-                    <li >
+                    <li class='hover:text-purple-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'>
                         <a href='projects.html'>Projects</a>
                     </li>
-                    <li>
+                    <li class='hover:text-purple-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'>
                         <a href='contacts.html'>Contacts</a>
                     </li>
                 </ul>`,
-    books: `<h3 class='font-bold justify-center'>Books</h3>
+    books: `<h3 class='font-bold text-4xl hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline hover:text-cyan-400 justify-center'>Books</h3>
             <div id="line-books" class='mt-4 w-full border-t border-0 justify-center transform border-blue-900 z-0"></div>
             <ul class='mt-4 flex flex-col list-disc list-inside text-left' >
-                <li>Alex Rider</li>
-                <li>Apple In China</li>
-                <li>Guns Germs and Steel</li>
-                <li>Outliers</li>
-                <li>Refugee</li>
+                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'>Alex Rider</li>
+                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'>Apple In China</li>
+                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'>Guns Germs and Steel</li>
+                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'>Outliers</li>
+                <li class='hover:text-cyan-400 hover:scale-205 transition-all ease-in-out duration-500 no-underline hover:underline'>Refugee</li>
             </ul>`,
-    shows: `<h3 class='font-bold justify-center'>Shows</h3>
+    shows: `<h3 class='font-bold text-4xl hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline hover:text-cyan-400 justify-center'>Shows</h3>
             <div id='line-shows' class='mt-4 w-full border-t border-0 justify-center transform border-blue-900 z-0'></div>
             <ul class='mt-4 flex flex-col list-disc list-inside text-left'>
-                <li>Blue Eyed Samurai</li>
-                <li>Breaking bad</li>
-                <li>Trollhunter</li>
-                <li>Unstable</li>
+                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'>Blue Eyed Samurai</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Breaking bad</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Trollhunter</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Unstable</li>
             </ul>`,
-    anime: `<h3 class='font-bold justify-center'>Animes</h3>
+    anime: `<h3 class='font-bold text-4xl hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline hover:text-cyan-400 justify-center'>Animes</h3>
             <div id='line-animes' class='mt-4 w-full border-t border-0 justify-center transform border-blue-900 z-0'></div>
             <ul class='mt-4 flex flex-col list-disc list-inside text-left'>
-                <li>Bleach</li>
-                <li>Attack On Titan</li>
-                <li>Vinland Saga</li>
-                <li>Death Note</li>
-                <li>Chainsawman</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Bleach</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Attack On Titan</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Vinland Saga</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Death Note</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Chainsawman</li>
             </ul>`,
-    music: `<h3 class='font-bold justify-center'>Music</h3>
+    music: `<h3 class='font-bold text-4xl hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline hover:text-cyan-400 justify-center'>Music</h3>
             <div id='line-music' class='mt-4 w-full border-t border-0 justify-center transform border-blue-900 z-0'></div>
             <ul class='mt-4 flex flex-col list-disc list-inside'>
-                <li>Apple Cider by Beabadoobee</li>
-                <li>just a dream by yel</li>
-                <li>lost cause by Isabella Peng</li>
-                <li>Sweet Boy by Malcolm Todd</li>
-                <li>twenytyfour by overtonight</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Apple Cider by Beabadoobee</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>just a dream by yel</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>lost cause by Isabella Peng</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Sweet Boy by Malcolm Todd</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>twenytyfour by overtonight</li>
             </ul>`,
-    likes: `<h3 class='font-bold justify-center'>Likes</h3>
+    likes: `<h3 class='font-bold text-4xl hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline hover:text-cyan-400 justify-center'>Likes</h3>
             <div id='line-music' class='mt-4 w-full border-t border-0 justify-center transform border-blue-900 z-0'></div>
             <ul class='mt-4 flex flex-col list-disc list-inside text-left'>
-                <li>Coding</li>
-                <li>Football</li>
-                <li>Photography</li>
-                <li>Business</li>
-                <li>STEM</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Coding</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Football</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Photography</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Business</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>STEM</li>
             </ul>`
 }
 function openDrop(category, type) {
