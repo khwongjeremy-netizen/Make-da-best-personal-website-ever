@@ -137,3 +137,50 @@ window.addEventListener('DOMContentLoaded', () => {
         )
     })
 })
+function initHoverEffects(card) {
+    const titleText =card.querySelector("h3");
+    const paragraphText = card.querySelector("p");
+
+    card.addEventListener("mouseenter", () => {
+        gsap.to(card, {
+            scale:1.05, 
+            duration: 0.3, 
+            ease: "power1.out",
+            overwrite: "auto",
+            color: "#60a5fa",
+        });
+    if (titleText && paragraphText) {
+        gsap.to(titleText, {
+            color: "#60a5fa",
+            duration:0.3,
+            overwrite: "auto"
+        });
+        gsap.to(paragraphText, {
+            color: "#60a5fa",
+            duration: 0.3,
+            overwrite: "auto"
+        });
+    }
+    });
+    card.addEventListener("mouseleave", () => {
+        gsap.to(card, {
+            scale: 1, 
+            duration: 0.3, 
+            ease: "power1.out",
+            overwrite: "auto",
+            color: "#f1f5f9"
+        });
+        if (titleText && paragraphText) {
+        gsap.to(titleText, {
+            color: "#f1f5f9",
+            duration:0.3,
+            overwrite: "auto"
+        });
+        gsap.to(paragraphText, {
+            color: "#f1f5f9",
+            duration: 0.3,
+            overwrite: "auto"
+        });
+    }
+    });
+}
