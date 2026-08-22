@@ -27,7 +27,6 @@ window.addEventListener('DOMContentLoaded', () => {
         )
     })
 })
-
 function initHoverEffects(card) {
     const titleText =card.querySelector("h3");
     const paragraphText = card.querySelector("p");
