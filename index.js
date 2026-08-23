@@ -15,37 +15,37 @@ const contentData = {
     books: `<h3 class='font-bold text-4xl hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline hover:text-cyan-400 justify-center'>Books</h3>
             <div id="line-books" class='mt-4 w-full border-t border-0 justify-center transform border-blue-900 z-0"></div>
             <ul class='mt-4 flex flex-col list-disc list-inside text-left' >
-                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'>Alex Rider</li>
-                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'>Apple In China</li>
-                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'>Guns Germs and Steel</li>
-                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'>Outliers</li>
-                <li class='hover:text-cyan-400 hover:scale-205 transition-all ease-in-out duration-500 no-underline hover:underline'>Refugee</li>
+                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://en.wikipedia.org/wiki/Alex_Rider'>Alex Ride</a></li>
+                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://en.wikipedia.org/wiki/Apple_in_China'>Apple In China</a></li>
+                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://en.wikipedia.org/wiki/Guns,_Germs,_and_Steel'>Guns Germs and Steel</a></li>
+                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://en.wikipedia.org/wiki/Outliers_(book)'>Outliers</a></li>
+                <li class='hover:text-cyan-400 hover:scale-205 transition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://en.wikipedia.org/wiki/Refugee_(Gratz_novel)'>Refugee</a></li>
             </ul>`,
     shows: `<h3 class='font-bold text-4xl hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline hover:text-cyan-400 justify-center'>Shows</h3>
             <div id='line-shows' class='mt-4 w-full border-t border-0 justify-center transform border-blue-900 z-0'></div>
             <ul class='mt-4 flex flex-col list-disc list-inside text-left'>
-                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'>Blue Eyed Samurai</li>
-                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Breaking bad</li>
-                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Trollhunter</li>
-                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Unstable</li>
+                <li class='hover:text-cyan-400 hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://en.wikipedia.org/wiki/Blue_Eye_Samurai'>Blue Eyed Samurai</a></li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://en.wikipedia.org/wiki/Breaking_Bad'>Breaking bad</a></li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://en.wikipedia.org/wiki/Trollhunters:_Tales_of_Arcadia'>Trollhunters</a></li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://unstable-universe-mc.fandom.com/wiki/Unstable_Universe_Wiki'>Unstable</a></li>
             </ul>`,
     anime: `<h3 class='font-bold text-4xl hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline hover:text-cyan-400 justify-center'>Animes</h3>
             <div id='line-animes' class='mt-4 w-full border-t border-0 justify-center transform border-blue-900 z-0'></div>
             <ul class='mt-4 flex flex-col list-disc list-inside text-left'>
-                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Bleach</li>
-                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Attack On Titan</li>
-                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Vinland Saga</li>
-                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Death Note</li>
-                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Chainsawman</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://en.wikipedia.org/wiki/Bleach_(TV_series)'>Bleach</a></li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://en.wikipedia.org/wiki/Attack_on_Titan'>Attack On Titan</a></li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://en.wikipedia.org/wiki/Vinland_Saga_(manga)'>Vinland Saga</a></li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://en.wikipedia.org/wiki/Death_Note'>Death Note</a></li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://en.wikipedia.org/wiki/Chainsaw_Man_(TV_series)'>Chainsawman</a></li>
             </ul>`,
     music: `<h3 class='font-bold text-4xl hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline hover:text-cyan-400 justify-center'>Music</h3>
             <div id='line-music' class='mt-4 w-full border-t border-0 justify-center transform border-blue-900 z-0'></div>
             <ul class='mt-4 flex flex-col list-disc list-inside'>
-                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Apple Cider by Beabadoobee</li>
-                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>just a dream by yel</li>
-                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>lost cause by Isabella Peng</li>
-                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>Sweet Boy by Malcolm Todd</li>
-                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'>twenytyfour by overtonight</li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://open.spotify.com/track/5xA5MggKc3aQxuOzNzPUWB'>Apple Cider by Beabadoobee</a></li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://open.spotify.com/album/6DJHxnUw0stWUtjKUg9xpy'>just a dream by yel</a></li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://open.spotify.com/track/5OxODvR3LmMDN1GeKUfzCT'>lost cause by Isabella Peng</a></li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://open.spotify.com/track/0eFM8B5vQLDVQVZhZalAT6'>Sweet Boy by Malcolm Todd</a></li>
+                <li class='hover:text-cyan-400 hover:scale-105 trasnition-all ease-in-out duration-500 no-underline hover:underline'><a href='https://open.spotify.com/track/7KVvGiIpMTWQWVsNiymnHS'>twenytyfour by overtonight</a></li>
             </ul>`,
     likes: `<h3 class='font-bold text-4xl hover:scale-105 transition-all ease-in-out duration-500 no-underline hover:underline hover:text-cyan-400 justify-center'>Likes</h3>
             <div id='line-music' class='mt-4 w-full border-t border-0 justify-center transform border-blue-900 z-0'></div>
