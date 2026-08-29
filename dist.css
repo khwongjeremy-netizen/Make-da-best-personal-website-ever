@@ -497,6 +497,9 @@
   .bg-slate-950 {
     background-color: var(--color-slate-950);
   }
+  .object-cover {
+    object-fit: cover;
+  }
   .p-0 {
     padding: 0;
   }
