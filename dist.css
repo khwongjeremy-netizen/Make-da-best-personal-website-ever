@@ -687,6 +687,13 @@
       }
     }
   }
+  .hover\:text-blue-900 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-blue-900);
+      }
+    }
+  }
   .hover\:text-cyan-400 {
     &:hover {
       @media (hover: hover) {
