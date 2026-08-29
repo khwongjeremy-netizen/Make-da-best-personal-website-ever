@@ -16,6 +16,7 @@
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-blue-900: oklch(37.9% 0.146 265.522);
     --color-purple-400: oklch(71.4% 0.203 305.504);
+    --color-purple-600: oklch(55.8% 0.288 302.321);
     --color-slate-50: oklch(98.4% 0.003 247.858);
     --color-slate-100: oklch(96.8% 0.007 247.896);
     --color-slate-200: oklch(92.9% 0.013 255.508);
@@ -715,6 +716,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-purple-400);
+      }
+    }
+  }
+  .hover\:text-purple-600 {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-purple-600);
       }
     }
   }
