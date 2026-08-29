@@ -693,6 +693,13 @@
       }
     }
   }
+  .hover\:border-purple-600 {
+    &:hover {
+      @media (hover: hover) {
+        border-color: var(--color-purple-600);
+      }
+    }
+  }
   .hover\:text-amber-400 {
     &:hover {
       @media (hover: hover) {
