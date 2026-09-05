@@ -76,5 +76,5 @@ function initHoverEffects(card) {
 }
 document.querySelectorAll('.hoverable-text').forEach(el => {
     const words = el.textContent.trim().split(/\s+/);
-    el.innerHTML = words.map(word => `<span class="inline-block hover:text-blue-400 hover:scale-110 hover:text-purple-400 hover:font-bold transtion-all duration-300 cursor-d">${word}</span>`).join(' ');
+    el.innerHTML = words.map(word => `<span class="inline-block hover:text-blue-400 hover:scale-110 hover:text-purple-400 hover:font-bold no-underline hover:underline transtion-all duration-300 cursor-d">${word}</span>`).join(' ');
 })
